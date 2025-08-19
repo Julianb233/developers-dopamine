@@ -113,10 +113,10 @@ app.post('/api/apply', async (c) => {
       status: 'new-application'
     }
     
-    // n8n webhook URL for applications (replace with your actual webhook)
-    const webhookUrl = process.env.N8N_APPLICATION_WEBHOOK || "https://your-n8n-instance.com/webhook/dd-application"
+    // backend webhook URL for applications (replace with your actual webhook)
+    const webhookUrl = process.env.APPLICATION_WEBHOOK || "https://your-backend-instance.com/webhook/dd-application"
     
-    if (webhookUrl.includes('your-n8n-instance.com')) {
+    if (webhookUrl.includes('your-backend-instance.com')) {
       // Demo mode - log the application
       console.log('Application received:', applicationData)
       return c.json({ 
@@ -126,7 +126,7 @@ app.post('/api/apply', async (c) => {
       })
     }
     
-    // Forward to your n8n automation workflow
+    // Forward to backend automation workflow
     const response = await fetch(webhookUrl, {
       method: 'POST',
       headers: {
@@ -172,9 +172,9 @@ app.post('/api/lead-capture', async (c) => {
       leadScore: 25
     }
     
-    const webhookUrl = process.env.N8N_LEAD_WEBHOOK || "https://your-n8n-instance.com/webhook/dd-lead-capture"
+    const webhookUrl = process.env.LEAD_WEBHOOK || "https://your-backend-instance.com/webhook/dd-lead-capture"
     
-    if (webhookUrl.includes('your-n8n-instance.com')) {
+    if (webhookUrl.includes('your-backend-instance.com')) {
       console.log('Lead captured:', enrichedLead)
       return c.json({ 
         success: true, 
@@ -216,9 +216,9 @@ app.post('/api/roi-calculator', async (c) => {
       leadScore: 75
     }
     
-    const webhookUrl = process.env.N8N_ROI_WEBHOOK || "https://your-n8n-instance.com/webhook/dd-roi-calc"
+    const webhookUrl = process.env.ROI_WEBHOOK || "https://your-backend-instance.com/webhook/dd-roi-calc"
     
-    if (webhookUrl.includes('your-n8n-instance.com')) {
+    if (webhookUrl.includes('your-backend-instance.com')) {
       console.log('ROI calculation:', calculationData)
       return c.json({ 
         success: true, 
@@ -262,9 +262,9 @@ app.post('/api/contact', async (c) => {
       leadScore: 50
     }
     
-    const webhookUrl = process.env.N8N_CONTACT_WEBHOOK || "https://your-n8n-instance.com/webhook/dd-contact"
+    const webhookUrl = process.env.CONTACT_WEBHOOK || "https://your-backend-instance.com/webhook/dd-contact"
     
-    if (webhookUrl.includes('your-n8n-instance.com')) {
+    if (webhookUrl.includes('your-backend-instance.com')) {
       console.log('Contact form submission:', enrichedContact)
       return c.json({ 
         success: true, 
@@ -304,7 +304,7 @@ app.post('/api/track', async (c) => {
     }
     
     // For now, just log the tracking data
-    // Later you can connect this to your analytics n8n workflow
+    // Later you can connect this to your analytics backend workflow
     console.log('User tracking event:', eventData)
     
     return c.json({ success: true, tracked: true })

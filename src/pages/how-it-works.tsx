@@ -86,22 +86,22 @@ export const HowItWorksPage = () => {
             <h2 className="section-title">Built for Construction Professionals</h2>
             <div className="tech-grid">
               <div className="tech-feature">
-                <div className="tech-icon">🧠</div>
+                <div className="tech-icon">AI</div>
                 <h3>Machine Learning</h3>
                 <p>Advanced algorithms trained specifically on construction data patterns and industry best practices.</p>
               </div>
               <div className="tech-feature">
-                <div className="tech-icon">🔒</div>
+                <div className="tech-icon">SEC</div>
                 <h3>Enterprise Security</h3>
                 <p>Bank-level encryption, SOC 2 compliance, and complete data privacy protection for your business.</p>
               </div>
               <div className="tech-feature">
-                <div className="tech-icon">⚡</div>
+                <div className="tech-icon">FAST</div>
                 <h3>Real-time Processing</h3>
                 <p>Instant analysis and alerts that keep you ahead of problems before they impact your projects.</p>
               </div>
               <div className="tech-feature">
-                <div className="tech-icon">🔗</div>
+                <div className="tech-icon">SYNC</div>
                 <h3>Seamless Integration</h3>
                 <p>Works with your existing tools without disrupting your established workflows and processes.</p>
               </div>
@@ -161,7 +161,7 @@ export const HowItWorksPage = () => {
               Join 200+ construction companies already using AI to increase profits and reduce stress
             </p>
             <div className="cta-buttons">
-              <a href="/apply" className="btn-accent btn-large">Apply for Partnership</a>
+              <a href="/apply" className="btn-accent btn-large">Get Started</a>
               <a href="/case-studies" className="btn-secondary-outline">See Success Stories</a>
             </div>
             <p className="cta-note">Setup typically completed within 48-72 hours</p>

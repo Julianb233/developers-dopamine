@@ -202,7 +202,7 @@ export const CaseStudiesPage = () => {
         {/* Testimonials */}
         <section className="testimonials-section">
           <div className="container">
-            <h2 className="section-title">What Our Partners Say</h2>
+            <h2 className="section-title">What Our Clients Say</h2>
             
             <div className="testimonials-grid">
               <div className="testimonial">
@@ -296,10 +296,10 @@ export const CaseStudiesPage = () => {
               Join the construction companies already transforming their operations with AI
             </p>
             <div className="cta-buttons">
-              <a href="/apply" className="btn-accent btn-large">Apply for Partnership</a>
+              <a href="/apply" className="btn-accent btn-large">Get Started</a>
               <a href="/roi-calculator" className="btn-secondary-outline">Calculate Your ROI</a>
             </div>
-            <p className="cta-note">Partnership applications reviewed within 24 hours</p>
+            <p className="cta-note">Service applications reviewed within 24 hours</p>
           </div>
         </section>
 

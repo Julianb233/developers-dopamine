@@ -6,9 +6,9 @@ export const ApplyPage = () => {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Apply for Partnership - Developer Dopamine AI Agents</title>
+        <title>Get Started - Developer Dopamine AI Agents</title>
         <link href="/static/style.css" rel="stylesheet" />
-        <meta name="description" content="Apply for partnership with Developer Dopamine. Transform your construction business with AI agents for schedule intelligence, budget control, and operational excellence." />
+        <meta name="description" content="Get started with Developer Dopamine AI services. Transform your construction business with AI agents for schedule intelligence, budget control, and operational excellence." />
       </head>
       <body>
         <Navigation />
@@ -21,7 +21,7 @@ export const ApplyPage = () => {
             <div className="hero-content">
               <div className="hero-text">
                 <div className="hero-badge">
-                  <span className="badge-text">PARTNERSHIP APPLICATION</span>
+                  <span className="badge-text">SERVICE APPLICATION</span>
                 </div>
                 <h1 className="hero-headline">Transform Your Construction Business</h1>
                 <p className="hero-subheadline">
@@ -38,7 +38,7 @@ export const ApplyPage = () => {
             <div className="application-container">
               
               <div className="application-intro">
-                <h2>Partnership Application</h2>
+                <h2>Service Application</h2>
                 <p>Tell us about your business and challenges. Julian will personally review your application and respond within 24 hours with a customized AI implementation plan.</p>
                 
                 <div className="application-benefits">
@@ -61,7 +61,7 @@ export const ApplyPage = () => {
                 </div>
               </div>
 
-              <form id="partnership-application" data-form-type="application" className="application-form">
+              <form id="service-application" data-form-type="application" className="application-form">
                 
                 <div className="form-section">
                   <h3>Company Information</h3>
@@ -255,7 +255,7 @@ export const ApplyPage = () => {
                 </div>
 
                 <div className="form-actions">
-                  <button type="submit" className="btn-primary btn-large">Submit Partnership Application</button>
+                  <button type="submit" className="btn-primary btn-large">Submit Service Application</button>
                   <p className="form-note">Julian will personally review your application and respond within 24 hours with next steps.</p>
                 </div>
 

@@ -229,7 +229,7 @@ export const SupplyChainOraclePage = () => {
                       </div>
                     </div>
                     <div className="prediction-item opportunity">
-                      <span className="prediction-icon">💰</span>
+                      <span className="prediction-icon">$</span>
                       <div className="prediction-text">
                         <strong className="prediction-title">Lumber pre-hurricane pricing</strong>
                         <span className="prediction-detail">Save $340K today</span>

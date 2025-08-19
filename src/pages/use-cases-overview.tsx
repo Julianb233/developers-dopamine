@@ -190,7 +190,7 @@ export const UseCasesOverviewPage = () => {
               Choose the use case that matters most to your business and see detailed results
             </p>
             <div className="cta-buttons">
-              <a href="/apply" className="btn-accent btn-large">Apply for Partnership</a>
+              <a href="/apply" className="btn-accent btn-large">Get Started</a>
               <a href="/case-studies" className="btn-secondary-outline">Read Success Stories</a>
             </div>
             <p className="cta-note">Implementation typically takes 48-72 hours</p>

@@ -115,28 +115,28 @@ export const ROICalculatorPage = () => {
                 <h3>What You'll Get</h3>
                 <div className="preview-items">
                   <div className="preview-item">
-                    <div className="preview-icon">📊</div>
+                    <div className="preview-icon">DATA</div>
                     <div className="preview-content">
                       <h4>Detailed ROI Analysis</h4>
                       <p>Customized savings calculation based on your specific business size and challenges</p>
                     </div>
                   </div>
                   <div className="preview-item">
-                    <div className="preview-icon">💰</div>
+                    <div className="preview-icon">SAVE</div>
                     <div className="preview-content">
                       <h4>Cost-Benefit Breakdown</h4>
                       <p>See exactly where the savings come from: time, materials, efficiency gains</p>
                     </div>
                   </div>
                   <div className="preview-item">
-                    <div className="preview-icon">📈</div>
+                    <div className="preview-icon">ROI</div>
                     <div className="preview-content">
                       <h4>Implementation Timeline</h4>
                       <p>Month-by-month ROI progression showing when you'll see returns</p>
                     </div>
                   </div>
                   <div className="preview-item">
-                    <div className="preview-icon">🎯</div>
+                    <div className="preview-icon">PLAN</div>
                     <div className="preview-content">
                       <h4>Personalized Recommendations</h4>
                       <p>Which AI agents to implement first for maximum impact on your business</p>
@@ -227,7 +227,7 @@ export const ROICalculatorPage = () => {
             </p>
             <div className="cta-buttons">
               <a href="#roi-calculator-form" className="btn-accent btn-large">Calculate Your ROI</a>
-              <a href="/apply" className="btn-secondary-outline">Apply for Partnership</a>
+              <a href="/apply" className="btn-secondary-outline">Get Started</a>
             </div>
             <p className="cta-note">ROI report delivered within 4 hours</p>
           </div>

@@ -38,7 +38,7 @@ export const Navigation: FC = () => {
         </div>
         
         <div className="nav-cta">
-          <a href="/apply" className="nav-cta-button">Apply for Partnership</a>
+          <a href="/apply" className="nav-cta-button">Get Started</a>
         </div>
         
         <div className="nav-mobile-toggle">

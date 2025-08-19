@@ -25,7 +25,7 @@ export const PortalPage = () => {
                   <span className="status-value online">Connected</span>
                 </div>
                 <div className="status-item">
-                  <span className="status-label">n8n Workflows:</span>
+                  <span className="status-label">Automation Workflows:</span>
                   <span className="status-value ready">Ready</span>
                 </div>
                 <div className="status-item">
@@ -45,7 +45,7 @@ export const PortalPage = () => {
               <div className="integration-card active">
                 <div className="integration-icon">📊</div>
                 <h3>Application Processing</h3>
-                <p>n8n workflow ready to process developer applications and route to CRM</p>
+                <p>Backend workflow ready to process developer applications and route to CRM</p>
                 <div className="integration-status">
                   <span className="status-badge active">Active</span>
                   <span className="endpoint">/api/apply</span>
@@ -65,7 +65,7 @@ export const PortalPage = () => {
               <div className="integration-card active">
                 <div className="integration-icon">💬</div>
                 <h3>Contact Forms</h3>
-                <p>Contact and lead capture forms connected to n8n automation workflows</p>
+                <p>Contact and lead capture forms connected to backend automation workflows</p>
                 <div className="integration-status">
                   <span className="status-badge active">Active</span>
                   <span className="endpoint">/api/contact</span>
@@ -111,7 +111,7 @@ export const PortalPage = () => {
             <h2>Backend Connection Details</h2>
             <div className="config-grid">
               <div className="config-section">
-                <h3>n8n Automation Workflows</h3>
+                <h3>Backend Automation Workflows</h3>
                 <div className="workflow-list">
                   <div className="workflow-item">
                     <strong>Application Processing:</strong>
@@ -241,7 +241,7 @@ export const PortalPage = () => {
               </div>
             </div>
             <div className="footer-bottom">
-              <p>&copy; 2024 Developer Dopamine. Backend portal ready for your n8n automation workflows.</p>
+              <p>&copy; 2024 Developer Dopamine. Backend portal ready for your automation workflows.</p>
             </div>
           </div>
         </footer>
@@ -262,9 +262,9 @@ export const PortalPage = () => {
             .then(response => response.json())
             .then(data => {
               if (data.success) {
-                alert('✅ Backend connection successful! Your n8n workflows are ready.');
+                alert('✅ Backend connection successful! Your automation workflows are ready.');
               } else {
-                alert('❌ Backend connection failed. Check your n8n webhook configuration.');
+                alert('❌ Backend connection failed. Check your webhook configuration.');
               }
             })
             .catch(error => {

@@ -21,7 +21,7 @@ export const HomePage: FC = () => {
             </div>
             
             <div className="hero-badge">
-              <span className="badge-text">Enterprise AI Automation</span>
+              <span className="badge-text">AI Automation for Construction</span>
             </div>
             
             <h1 className="hero-headline">
@@ -52,7 +52,7 @@ export const HomePage: FC = () => {
             
             <div className="hero-cta-group">
               <a href="/apply" className="cta-button primary large">
-                Get Your AI Team
+                Start Your Service
               </a>
               <a href="/how-it-works" className="cta-button secondary large">
                 See The System
@@ -247,7 +247,7 @@ export const HomePage: FC = () => {
                 <span className="badge-text">EXCLUSIVE ACCESS</span>
               </div>
               
-              <h2>Elite Partnership Program</h2>
+              <h2>AI Service Subscription</h2>
               <h3>Limited to 10 Construction Leaders Per Quarter</h3>
             </div>
             
@@ -271,8 +271,8 @@ export const HomePage: FC = () => {
               <div className="explanation-card">
                 <div className="explanation-badge">COMMIT</div>
                 <div className="explanation-content">
-                  <h4>The Partnership</h4>
-                  <p>We're building long-term partnerships, not selling software licenses. Your success becomes our success metric.</p>
+                  <h4>The Service</h4>
+                  <p>We provide ongoing AI automation services, not one-time software purchases. Your operational success drives our continuous improvement.</p>
                 </div>
               </div>
             </div>
@@ -310,7 +310,7 @@ export const HomePage: FC = () => {
               <div className="urgency-notice">
                 <div className="notice-text">
                   <strong>Applications are being processed in real-time.</strong> 
-                  Once we reach 10 confirmed partnerships, the enrollment automatically closes until Q1 2025.
+                  Once we reach 10 active service subscriptions, new enrollment automatically closes until Q1 2025.
                 </div>
               </div>
             </div>
@@ -335,7 +335,7 @@ export const HomePage: FC = () => {
               
               <div className="cta-buttons">
                 <a href="/apply" className="cta-button primary large">
-                  Apply for Partnership
+                  Subscribe to Service
                 </a>
                 <a href="/roi-calculator" className="cta-button secondary large">
                   Calculate Your ROI
