@@ -25,12 +25,12 @@ export const HomePage: FC = () => {
             </div>
             
             <h1 className="hero-headline">
-              The AI That Actually <span className="highlight-gradient">Ships Projects</span>
+              Stop Losing Money To <span className="highlight-gradient">Bad Contractors</span>
             </h1>
             
             <p className="hero-subheadline">
-              Tired of burning cash on subs who vanish mid-project? Fed up with budgets that balloon like your last "quick fix"? 
-              Our AI agents handle the chaos while you get back to building things that matter.
+              Your best sub just ghosted you (again). Your budget looks like a crime scene. Your schedule is a joke.
+              Here's how AI agents eliminate the chaos so you can build faster, cheaper, and stress-free.
             </p>
             
             <div className="hero-stats">
