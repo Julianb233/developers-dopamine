@@ -6,9 +6,9 @@
 - **Features**: Hormozi-style copy, dopamine-charged design, countdown timer, scarcity mechanics, form automation
 
 ## 🌐 URLs
-- **🚀 LIVE PRODUCTION**: https://developer-dopamine.pages.dev
-- **🆕 ENHANCED VERSION**: https://12640e57.developer-dopamine.pages.dev
-- **API Endpoint**: https://developer-dopamine.pages.dev/api/apply
+- **🚀 LIVE PRODUCTION**: https://e19b7cf2.developer-dopamine.pages.dev
+- **🆕 PROJECT TRACKER**: https://e19b7cf2.developer-dopamine.pages.dev/project-tracker
+- **API Endpoint**: https://e19b7cf2.developer-dopamine.pages.dev/api/apply
 - **GitHub Repository**: https://github.com/Julianb233/developers-dopamine
 - **Development**: https://3000-icaynvclojkqkspalmz72-6532622b.e2b.dev
 
@@ -25,6 +25,18 @@
 - ✅ **Staggered Animations**: Professional fade-in sequences for all sections
 - ✅ **Micro-Interactions**: Button hover effects, card transforms
 - ✅ **Progressive Enhancement**: Loading states and smooth transitions
+
+### 🏗️ **REAL ESTATE PROJECT TRACKER** (NEW!)
+- ✅ **3 Calculator Types**: Development, House Flipping, Rental Property Analysis
+- ✅ **Industry-Standard Formulas**: IRR, Cap Rate, 70% Rule, NOI, Cash-on-Cash Return
+- ✅ **Real-Time Calculations**: Auto-updating results with color-coded performance indicators
+- ✅ **Customer Variations**: Save/load different project scenarios using localStorage
+- ✅ **Professional UI**: Mobile-responsive design with premium styling
+- ✅ **Formula Reference**: Transparent industry-standard calculation documentation
+- ✅ **Project Types**: 
+  - 🏗️ **Development Projects**: Pro forma analysis, construction costs, financing
+  - 🔄 **House Flipping**: ARV analysis, 70% rule compliance, ROI calculations
+  - 🏠 **Rental Properties**: Cash flow analysis, cap rates, debt service coverage
 
 ### 📊 **ENHANCED VALUE PROPOSITION**
 - ✅ **Quantified ROI Section**: $4.3M+ value creation with detailed breakdowns
@@ -55,6 +67,10 @@
 
 ## 🚀 Functional Entry Points
 - **GET /** - Main landing page with all sections and functionality
+- **GET /project-tracker** - Real estate project calculator with 3 analysis types
+  - Development Project Analysis (IRR, ROE, profit margins)
+  - House Flipping Calculator (70% rule, ROI, MAO)
+  - Rental Property Analysis (Cap rate, cash flow, DSCR)
 - **POST /api/apply** - Form submission endpoint
   - Parameters: `company`, `name`, `email`, `phone`, `project_type`, `project_size`, `message`
   - Response: `{success: boolean, message: string}`
@@ -107,23 +123,23 @@ window.DD_CONFIG = {
 
 ## 🚀 Deployment Status
 - **Platform**: Cloudflare Pages ✅ LIVE & ENHANCED
-- **Production URL**: https://developer-dopamine.pages.dev ✅ Active
-- **🆕 Enhanced Version**: https://12640e57.developer-dopamine.pages.dev ✅ Premium
-- **Build Status**: ✅ Successful (Premium Version Deployed)
+- **Production URL**: https://e19b7cf2.developer-dopamine.pages.dev ✅ Active
+- **🆕 Project Tracker**: https://e19b7cf2.developer-dopamine.pages.dev/project-tracker ✅ Live
+- **Build Status**: ✅ Successful (With Real Estate Calculator)
 - **API Status**: ✅ Functional with Enhanced Form
 - **GitHub Sync**: ✅ Connected & Updated
 - **Performance**: ✅ Optimized for Enterprise Users
-- **Last Updated**: 2024-08-19 (Major Professional Upgrade)
+- **Last Updated**: 2024-08-19 (Added Comprehensive Project Tracker)
 
 ## 📋 Features Not Yet Implemented
-- [ ] **Production Deployment**: Deploy to live Cloudflare Pages URL
-- [ ] **n8n Integration**: Connect to actual webhook URL
+- [ ] **n8n Integration**: Connect to actual webhook URL (currently in demo mode)
 - [ ] **Analytics**: Google Analytics/Hotjar integration  
 - [ ] **A/B Testing**: Multiple copy variations
 - [ ] **Chat Widget**: Live chat support integration
 - [ ] **Video Testimonials**: Client success stories
 - [ ] **Case Studies**: Detailed project examples
-- [ ] **Pricing Calculator**: Interactive ROI calculator
+- [ ] **Export Features**: PDF reports for project analysis
+- [ ] **Advanced Calculations**: More complex financial modeling (NPV, WACC, sensitivity analysis)
 
 ## 🎯 Recommended Next Steps
 1. **Deploy to Production**: Use Cloudflare Pages for live URL
