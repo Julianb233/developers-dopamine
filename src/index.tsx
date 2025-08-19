@@ -34,16 +34,16 @@ app.get('/', (c) => {
             </div>
             
             <div className="hero-badge">
-              <span className="badge-text">🏆 Enterprise AI Automation</span>
+              <span className="badge-text">Enterprise AI Automation</span>
             </div>
             
             <h1 className="hero-headline">
-              Your <span className="highlight-gradient">AI-Powered</span> Construction Command Center
+              The AI That Actually <span className="highlight-gradient">Ships Projects</span>
             </h1>
             
             <p className="hero-subheadline">
-              Stop losing millions to project delays, budget overruns, and unreliable subcontractors. 
-              Our enterprise AI agents handle everything from scheduling to procurement while you focus on what matters — building profitable projects.
+              Tired of burning cash on subs who vanish mid-project? Fed up with budgets that balloon like your last "quick fix"? 
+              Our AI agents handle the chaos while you get back to building things that matter.
             </p>
             
             <div className="hero-stats">
@@ -65,26 +65,21 @@ app.get('/', (c) => {
             
             <div className="hero-cta-group">
               <a href="#apply" className="cta-button primary large">
-                <span className="button-icon">🚀</span>
-                Schedule Your AI Consultation
+                Get Your AI Team
               </a>
               <a href="#solution" className="cta-button secondary large">
-                <span className="button-icon">📊</span>
-                See How It Works
+                See The System
               </a>
             </div>
             
             <div className="hero-trust-indicators">
               <div className="trust-item">
-                <span className="trust-icon">🛡️</span>
                 <span className="trust-text">Enterprise Security</span>
               </div>
               <div className="trust-item">
-                <span className="trust-icon">📈</span>
                 <span className="trust-text">ROI Guaranteed</span>
               </div>
               <div className="trust-item">
-                <span className="trust-icon">⚡</span>
                 <span className="trust-text">48hr Setup</span>
               </div>
             </div>
@@ -97,20 +92,21 @@ app.get('/', (c) => {
         <div className="container">
           <div className="pain-grid">
             <div className="pain-content">
-              <h2>You already know this story:</h2>
+              <h2>We've All Been Here Before</h2>
               <ul className="pain-list">
-                <li>💸 Subcontractors vanish for 2 weeks mid-project.</li>
-                <li>🏗️ Budgets balloon like it's a Vegas bachelor party.</li>
-                <li>⏳ You're overpaying humans to "manage" spreadsheets while deadlines slip away.</li>
-                <li>📋 And let's not even talk about RFIs and change orders that take forever.</li>
+                <li>Your best subcontractor just ghosted you. Again. Two weeks before deadline.</li>
+                <li>The budget spreadsheet looks like a crime scene. Every line item is bleeding red.</li>
+                <li>You're paying someone $85/hour to manually update schedules that are already outdated.</li>
+                <li>RFIs sit in email hell while your project timeline becomes a cruel joke.</li>
               </ul>
               <p className="pain-summary">
-                Real estate developers and construction managers are tired of juggling 100 balls and paying through the nose while projects stall.
+                You didn't get into construction to become a full-time project babysitter. 
+                But here you are, juggling chaos instead of building the next great project.
               </p>
             </div>
             <div className="pain-image">
               <div className="stressed-dev-illustration">
-                <span className="illustration-text">😵‍💫 You right now</span>
+                <span className="illustration-text">Every PM, Ever</span>
               </div>
             </div>
           </div>
@@ -121,55 +117,55 @@ app.get('/', (c) => {
       <section className="solution-section">
         <div className="container">
           <div className="solution-header">
-            <h2>DD = Your AI Agent Teammate.</h2>
+            <h2>Six AI Agents That Actually Work</h2>
             <p className="solution-intro">
-              Not software. Not another overpriced SaaS license.<br/>
-              A literal AI teammate who:
+              No more software that promises everything and delivers spreadsheets.<br/>
+              These agents handle the grunt work so you can focus on the build:
             </p>
           </div>
           
           <div className="agents-grid">
             <div className="agent-card">
-              <div className="agent-icon">📅</div>
-              <h3>Scheduler Agent</h3>
-              <p>Tasks & milestones automatically (and updates calendars + alerts your crews). Delay impact forecasts included.</p>
+              <div className="agent-icon">SCHED</div>
+              <h3>Schedule Intelligence</h3>
+              <p>Automatically sequences tasks, predicts delays before they happen, and keeps everyone on the same timeline. No more "I didn't know about that deadline."</p>
             </div>
             
             <div className="agent-card">
-              <div className="agent-icon">💰</div>
-              <h3>Budget & Cost Agent</h3>
-              <p>Tracks budgets in real-time with burn-rate alerts, variance warnings, and portfolio roll-ups.</p>
+              <div className="agent-icon">COST</div>
+              <h3>Budget Guardian</h3>
+              <p>Real-time burn rate tracking with variance alerts that actually matter. Knows when you're about to blow through that contingency fund.</p>
             </div>
             
             <div className="agent-card">
-              <div className="agent-icon">🧾</div>
-              <h3>Invoice & OCR Agent</h3>
-              <p>Processes invoices instantly with PDF extraction, PO/contract reconcile, accounting-ready output.</p>
+              <div className="agent-icon">DOC</div>
+              <h3>Document Processor</h3>
+              <p>Reads invoices, contracts, and change orders instantly. Extracts data, flags discrepancies, and routes approvals automatically.</p>
             </div>
             
             <div className="agent-card">
-              <div className="agent-icon">⏱️</div>
-              <h3>Time & Workforce Agent</h3>
-              <p>Logs time + workforce hours with anomaly detection and job-costing linkage so you know exactly who did what.</p>
+              <div className="agent-icon">TIME</div>
+              <h3>Workforce Tracker</h3>
+              <p>Monitors labor hours, catches time theft, and links everything to job costing. Finally know where your money actually goes.</p>
             </div>
             
             <div className="agent-card">
-              <div className="agent-icon">🔔</div>
-              <h3>Comms & Reporting Agent</h3>
-              <p>Sends AI-written weekly reports, risk/sentiment scans, and client digests. Smart alerts included.</p>
+              <div className="agent-icon">COMM</div>
+              <h3>Communication Hub</h3>
+              <p>Generates weekly reports that clients actually read. Monitors project sentiment and flags issues before they become problems.</p>
             </div>
             
             <div className="agent-card">
-              <div className="agent-icon">📦</div>
-              <h3>Procurement Agent</h3>
-              <p>Manages vendors with demand forecasting, vendor scoring, and low-stock reorders. Never run out again.</p>
+              <div className="agent-icon">PROC</div>
+              <h3>Supply Chain Oracle</h3>
+              <p>Predicts material shortages, manages vendor relationships, and automates reorders. Because running out of rebar is not an option.</p>
             </div>
           </div>
           
           <div className="solution-footer">
             <p className="best-part">
-              And the best part?<br/>
-              <strong>DD never sleeps, never flakes, and never invoices late.</strong>
+              The difference? These agents don't call in sick, don't need training, and never miss a deadline.<br/>
+              <strong>They just work. Every time.</strong>
             </p>
           </div>
         </div>
@@ -185,7 +181,7 @@ app.get('/', (c) => {
           
           <div className="value-stack">
             <div className="value-card premium">
-              <div className="value-icon">⚡</div>
+              <div className="value-icon">SPEED</div>
               <div className="value-metric">Project Velocity Increase</div>
               <div className="value-amount">30% Faster Delivery</div>
               <div className="value-impact">= $2.5M+ Annual Savings</div>
@@ -193,26 +189,26 @@ app.get('/', (c) => {
             </div>
             
             <div className="value-card premium">
-              <div className="value-icon">💰</div>
-              <div className="value-metric">Cost Reduction</div>
-              <div className="value-amount">25% Budget Optimization</div>
+              <div className="value-icon">COST</div>
+              <div className="value-metric">Budget Optimization</div>
+              <div className="value-amount">25% Cost Reduction</div>
               <div className="value-impact">= $1.8M+ Cost Savings</div>
               <div className="value-description">Real-time budget tracking, variance alerts, automated cost reconciliation</div>
             </div>
             
             <div className="value-card premium">
-              <div className="value-icon">🎯</div>
-              <div className="value-metric">Operational Efficiency</div>
-              <div className="value-amount">40% Time Recovery</div>
-              <div className="value-impact">= 2,000+ Hours Back</div>
+              <div className="value-icon">TIME</div>
+              <div className="value-metric">Administrative Recovery</div>
+              <div className="value-amount">40% Time Back</div>
+              <div className="value-impact">= 2,000+ Hours Annually</div>
               <div className="value-description">Automated reporting, intelligent scheduling, predictive maintenance</div>
             </div>
             
             <div className="value-card premium">
-              <div className="value-icon">📊</div>
-              <div className="value-metric">Risk Mitigation</div>
-              <div className="value-amount">90% Issue Prevention</div>
-              <div className="value-impact">= Priceless Peace of Mind</div>
+              <div className="value-icon">RISK</div>
+              <div className="value-metric">Issue Prevention</div>
+              <div className="value-amount">90% Problem Avoidance</div>
+              <div className="value-impact">= Predictable Outcomes</div>
               <div className="value-description">Early warning systems, compliance monitoring, quality assurance automation</div>
             </div>
           </div>
@@ -255,7 +251,6 @@ app.get('/', (c) => {
           <div className="scarcity-content">
             <div className="scarcity-header">
               <div className="exclusivity-badge">
-                <span className="badge-icon">🏆</span>
                 <span className="badge-text">EXCLUSIVE ACCESS</span>
               </div>
               
@@ -265,7 +260,7 @@ app.get('/', (c) => {
             
             <div className="scarcity-explanation">
               <div className="explanation-card">
-                <div className="explanation-icon">🎯</div>
+                <div className="explanation-badge">WHY</div>
                 <div className="explanation-content">
                   <h4>Why the Limitation?</h4>
                   <p>Each AI implementation requires deep integration with your existing systems, dedicated support resources, and custom configuration. Quality over quantity.</p>
@@ -273,7 +268,7 @@ app.get('/', (c) => {
               </div>
               
               <div className="explanation-card">
-                <div className="explanation-icon">⚡</div>
+                <div className="explanation-badge">GET</div>
                 <div className="explanation-content">
                   <h4>What You Get</h4>
                   <p>Direct access to our senior AI engineers, priority support, custom workflow design, and guaranteed 48-hour setup completion.</p>
@@ -281,9 +276,9 @@ app.get('/', (c) => {
               </div>
               
               <div className="explanation-card">
-                <div className="explanation-icon">🛡️</div>
+                <div className="explanation-badge">COMMIT</div>
                 <div className="explanation-content">
-                  <h4>The Commitment</h4>
+                  <h4>The Partnership</h4>
                   <p>We're building long-term partnerships, not selling software licenses. Your success becomes our success metric.</p>
                 </div>
               </div>
@@ -297,7 +292,6 @@ app.get('/', (c) => {
               <div className="urgency-grid">
                 <div className="countdown-card">
                   <div className="card-header">
-                    <span className="card-icon">⏰</span>
                     <span className="card-title">Enrollment Closes</span>
                   </div>
                   <div className="card-content">
@@ -307,7 +301,6 @@ app.get('/', (c) => {
                 
                 <div className="slots-card">
                   <div className="card-header">
-                    <span className="card-icon">👥</span>
                     <span className="card-title">Spots Remaining</span>
                   </div>
                   <div className="card-content">
@@ -322,7 +315,6 @@ app.get('/', (c) => {
               </div>
               
               <div className="urgency-notice">
-                <div className="notice-icon">🔥</div>
                 <div className="notice-text">
                   <strong>Applications are being processed in real-time.</strong> 
                   Once we reach 10 confirmed partnerships, the enrollment automatically closes until Q1 2025.
@@ -344,8 +336,8 @@ app.get('/', (c) => {
             
             <div className="cta-actions">
               <p className="cta-bullets">
-                👉 Stop juggling. Stop overpaying. Stop waiting.<br/>
-                👉 Start building faster, cheaper, and with peace of mind.
+                Stop juggling chaos. Stop overpaying for mediocrity. Stop waiting for others to fix your problems.<br/>
+                Start building faster, cheaper, and with complete operational control.
               </p>
               
               <form className="apply-form" data-n8n-webhook="">
@@ -367,11 +359,11 @@ app.get('/', (c) => {
                 <textarea name="message" placeholder="Tell us about your biggest project management pain point..." rows={3}></textarea>
                 
                 <button type="submit" className="cta-button primary large">
-                  🚀 Apply Now Before We're Full
+                  Apply for Partnership
                 </button>
                 
                 <p className="form-disclaimer">
-                  By applying, you agree to a quick 15-min qualification call to see if DD is right for your operation.
+                  By applying, you agree to a 15-minute qualification call to ensure mutual fit.
                 </p>
               </form>
             </div>
