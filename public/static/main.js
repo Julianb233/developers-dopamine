@@ -305,45 +305,176 @@ class DDLandingPage {
     }, 5000);
   }
   
-  // Animation Enhancements
+  // Premium Animation Enhancements
   setupAnimations() {
-    // Intersection Observer for fade-in animations
-    const observerOptions = {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+    // Advanced Intersection Observer for staggered animations
+    const createObserver = (className, delay = 0) => {
+      return new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.add(className);
+            }, delay * index);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      });
     };
-    
-    const observer = new IntersectionObserver((entries) => {
+
+    // Staggered fade-in for agent cards
+    const agentObserver = createObserver('fade-in', 150);
+    document.querySelectorAll('.agent-card').forEach(el => {
+      agentObserver.observe(el);
+    });
+
+    // Slide-in animations for pain points
+    const painObserver = createObserver('slide-in-left', 100);
+    document.querySelectorAll('.pain-list li').forEach(el => {
+      painObserver.observe(el);
+    });
+
+    // Bounce-in for value cards
+    const valueObserver = createObserver('bounce-in', 200);
+    document.querySelectorAll('.value-card').forEach(el => {
+      valueObserver.observe(el);
+    });
+
+    // Special effects for guarantee box
+    const guaranteeObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('fade-in');
+          // Add special pulse effect
+          setTimeout(() => {
+            entry.target.style.animation = 'pulse 2s ease-in-out 3';
+          }, 500);
         }
       });
-    }, observerOptions);
-    
-    // Observe key elements
-    const elementsToAnimate = document.querySelectorAll(`
-      .agent-card,
-      .value-card,
-      .guarantee-box,
-      .urgency-container
-    `);
-    
-    elementsToAnimate.forEach(el => {
-      observer.observe(el);
-    });
-    
-    // Add pulse animation to CTA buttons
-    const ctaButtons = document.querySelectorAll('.cta-button.primary');
+    }, { threshold: 0.5 });
+
+    const guaranteeBox = document.querySelector('.guarantee-box');
+    if (guaranteeBox) {
+      guaranteeObserver.observe(guaranteeBox);
+    }
+
+    // Enhanced CTA button interactions
+    const ctaButtons = document.querySelectorAll('.cta-button');
     ctaButtons.forEach(btn => {
+      // Hover effects
       btn.addEventListener('mouseenter', () => {
-        btn.classList.add('pulse');
+        btn.style.transform = 'translateY(-2px) scale(1.02)';
       });
       
       btn.addEventListener('mouseleave', () => {
-        btn.classList.remove('pulse');
+        btn.style.transform = 'translateY(0) scale(1)';
+      });
+
+      // Click effect
+      btn.addEventListener('mousedown', () => {
+        btn.style.transform = 'translateY(0) scale(0.98)';
+      });
+
+      btn.addEventListener('mouseup', () => {
+        btn.style.transform = 'translateY(-2px) scale(1.02)';
       });
     });
+
+    // Parallax effect for hero background
+    this.setupParallax();
+
+    // Smooth scrolling enhancement
+    this.setupSmoothScrolling();
+
+    // Dynamic stats counter
+    this.setupStatsCounter();
+  }
+
+  setupParallax() {
+    const hero = document.querySelector('.hero-section');
+    const pattern = document.querySelector('.hero-background-pattern');
+    
+    if (!hero || !pattern) return;
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+      const rate = scrolled * -0.5;
+      pattern.style.transform = `translateY(${rate}px)`;
+    });
+  }
+
+  setupSmoothScrolling() {
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  }
+
+  setupStatsCounter() {
+    const stats = document.querySelectorAll('.stat-number');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          this.animateNumber(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    stats.forEach(stat => observer.observe(stat));
+  }
+
+  animateNumber(element) {
+    const text = element.textContent;
+    const hasPlus = text.includes('+');
+    const hasDollar = text.includes('$');
+    const hasPercent = text.includes('%');
+    
+    // Extract number
+    let number = parseFloat(text.replace(/[^0-9.]/g, ''));
+    if (text.includes('M')) number *= 1000000;
+    if (text.includes('K')) number *= 1000;
+    
+    const duration = 2000;
+    const steps = 60;
+    const increment = number / steps;
+    let current = 0;
+    
+    const timer = setInterval(() => {
+      current += increment;
+      if (current >= number) {
+        current = number;
+        clearInterval(timer);
+      }
+      
+      let displayValue = Math.floor(current);
+      let suffix = '';
+      
+      if (number >= 1000000) {
+        displayValue = (current / 1000000).toFixed(1);
+        suffix = 'M';
+      } else if (number >= 1000) {
+        displayValue = (current / 1000).toFixed(0);
+        suffix = 'K';
+      }
+      
+      let prefix = '';
+      if (hasDollar) prefix = '$';
+      
+      let postfix = '';
+      if (hasPlus) postfix += '+';
+      if (hasPercent) postfix += '%';
+      
+      element.textContent = prefix + displayValue + suffix + postfix;
+    }, duration / steps);
   }
   
   // Utility Methods

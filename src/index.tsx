@@ -21,17 +21,73 @@ app.get('/', (c) => {
     <div>
       {/* Hero Section */}
       <section className="hero-section">
+        <div className="hero-background-pattern"></div>
+        <div className="hero-gradient-overlay"></div>
         <div className="container">
           <div className="hero-content">
+            <div className="brand-logo-section">
+              <div className="brand-icon">⚡</div>
+              <div className="brand-text">
+                <div className="brand-main">DEVELOPER</div>
+                <div className="brand-accent">DOPAMINE</div>
+              </div>
+            </div>
+            
+            <div className="hero-badge">
+              <span className="badge-text">🏆 Enterprise AI Automation</span>
+            </div>
+            
             <h1 className="hero-headline">
-              🚀 Your new AI teammate ships projects faster, cheaper, and with zero excuses.
+              Your <span className="highlight-gradient">AI-Powered</span> Construction Command Center
             </h1>
+            
             <p className="hero-subheadline">
-              Stop burning cash on subcontractors who ghost you. Meet DD — the Developer Dopamine AI agent that handles schedules, budgets, invoices, procurement, and reporting while you focus on building.
+              Stop losing millions to project delays, budget overruns, and unreliable subcontractors. 
+              Our enterprise AI agents handle everything from scheduling to procurement while you focus on what matters — building profitable projects.
             </p>
-            <a href="#apply" className="cta-button primary">
-              👉 Let DD Take the Wheel
-            </a>
+            
+            <div className="hero-stats">
+              <div className="stat-item">
+                <div className="stat-number">$2.5M+</div>
+                <div className="stat-label">Average Annual Savings</div>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <div className="stat-number">30%</div>
+                <div className="stat-label">Faster Project Delivery</div>
+              </div>
+              <div className="stat-divider"></div>
+              <div className="stat-item">
+                <div className="stat-number">24/7</div>
+                <div className="stat-label">AI Monitoring</div>
+              </div>
+            </div>
+            
+            <div className="hero-cta-group">
+              <a href="#apply" className="cta-button primary large">
+                <span className="button-icon">🚀</span>
+                Schedule Your AI Consultation
+              </a>
+              <a href="#solution" className="cta-button secondary large">
+                <span className="button-icon">📊</span>
+                See How It Works
+              </a>
+            </div>
+            
+            <div className="hero-trust-indicators">
+              <div className="trust-item">
+                <span className="trust-icon">🛡️</span>
+                <span className="trust-text">Enterprise Security</span>
+              </div>
+              <div className="trust-item">
+                <span className="trust-icon">📈</span>
+                <span className="trust-text">ROI Guaranteed</span>
+              </div>
+              <div className="trust-item">
+                <span className="trust-icon">⚡</span>
+                <span className="trust-text">48hr Setup</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -122,27 +178,55 @@ app.get('/', (c) => {
       {/* Value Stack Section */}
       <section className="value-section">
         <div className="container">
-          <h2 className="value-headline">Here's what it actually means for your bottom line:</h2>
+          <div className="value-header">
+            <h2 className="value-headline">Quantified ROI That Speaks Your Language</h2>
+            <p className="value-subtitle">Real numbers from real construction projects. No fluff, just measurable impact on your bottom line.</p>
+          </div>
+          
           <div className="value-stack">
-            <div className="value-card">
-              <div className="value-metric">⏩ Projects finished 30% faster</div>
-              <div className="value-amount">→ +$250,000 saved</div>
+            <div className="value-card premium">
+              <div className="value-icon">⚡</div>
+              <div className="value-metric">Project Velocity Increase</div>
+              <div className="value-amount">30% Faster Delivery</div>
+              <div className="value-impact">= $2.5M+ Annual Savings</div>
+              <div className="value-description">Eliminate delays, optimize workflows, predict bottlenecks before they happen</div>
             </div>
-            <div className="value-card">
-              <div className="value-metric">💸 Subcontractor overhead cut 20%</div>
-              <div className="value-amount">→ +$100,000 saved</div>
+            
+            <div className="value-card premium">
+              <div className="value-icon">💰</div>
+              <div className="value-metric">Cost Reduction</div>
+              <div className="value-amount">25% Budget Optimization</div>
+              <div className="value-impact">= $1.8M+ Cost Savings</div>
+              <div className="value-description">Real-time budget tracking, variance alerts, automated cost reconciliation</div>
             </div>
-            <div className="value-card">
-              <div className="value-metric">⏱️ Instant updates & no downtime</div>
-              <div className="value-amount">→ priceless peace of mind</div>
+            
+            <div className="value-card premium">
+              <div className="value-icon">🎯</div>
+              <div className="value-metric">Operational Efficiency</div>
+              <div className="value-amount">40% Time Recovery</div>
+              <div className="value-impact">= 2,000+ Hours Back</div>
+              <div className="value-description">Automated reporting, intelligent scheduling, predictive maintenance</div>
             </div>
-            <div className="value-card">
-              <div className="value-metric">🤖 Automations that eliminate grunt work</div>
-              <div className="value-amount">→ 100s of hours back</div>
+            
+            <div className="value-card premium">
+              <div className="value-icon">📊</div>
+              <div className="value-metric">Risk Mitigation</div>
+              <div className="value-amount">90% Issue Prevention</div>
+              <div className="value-impact">= Priceless Peace of Mind</div>
+              <div className="value-description">Early warning systems, compliance monitoring, quality assurance automation</div>
             </div>
           </div>
-          <div className="total-value">
-            <strong>Total Value = $350,000+</strong> … Yours for a fraction.
+          
+          <div className="total-value-section">
+            <div className="total-value-card">
+              <div className="total-label">Conservative Annual Impact</div>
+              <div className="total-amount">$4.3M+ Value Creation</div>
+              <div className="total-subtitle">Investment Recovery: <span className="highlight">3-6 Months</span></div>
+              <div className="roi-badge">
+                <span className="roi-number">770%</span>
+                <span className="roi-text">Typical ROI</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -169,28 +253,82 @@ app.get('/', (c) => {
       <section className="scarcity-section">
         <div className="container">
           <div className="scarcity-content">
-            <h2>⚠️ Only 10 development firms onboarded each quarter.</h2>
-            <p className="scarcity-why">
-              <strong>Why?</strong> Because our AI agents actually integrate with your workflows — we're not slinging logins, we're building a teammate.
-            </p>
-            <p className="scarcity-rule">
-              Once the 10 slots are filled, you wait until next quarter.<br/>
-              <strong>No exceptions.</strong>
-            </p>
-            
-            <div className="urgency-container">
-              <div className="countdown-timer">
-                <div className="timer-label">Quarter ends in:</div>
-                <div id="countdown-display">Loading...</div>
+            <div className="scarcity-header">
+              <div className="exclusivity-badge">
+                <span className="badge-icon">🏆</span>
+                <span className="badge-text">EXCLUSIVE ACCESS</span>
               </div>
               
-              <div className="slots-remaining">
-                <div className="slots-label">Spots remaining:</div>
-                <div id="slots-display" className="slots-number">Loading...</div>
+              <h2>Elite Partnership Program</h2>
+              <h3>Limited to 10 Construction Leaders Per Quarter</h3>
+            </div>
+            
+            <div className="scarcity-explanation">
+              <div className="explanation-card">
+                <div className="explanation-icon">🎯</div>
+                <div className="explanation-content">
+                  <h4>Why the Limitation?</h4>
+                  <p>Each AI implementation requires deep integration with your existing systems, dedicated support resources, and custom configuration. Quality over quantity.</p>
+                </div>
+              </div>
+              
+              <div className="explanation-card">
+                <div className="explanation-icon">⚡</div>
+                <div className="explanation-content">
+                  <h4>What You Get</h4>
+                  <p>Direct access to our senior AI engineers, priority support, custom workflow design, and guaranteed 48-hour setup completion.</p>
+                </div>
+              </div>
+              
+              <div className="explanation-card">
+                <div className="explanation-icon">🛡️</div>
+                <div className="explanation-content">
+                  <h4>The Commitment</h4>
+                  <p>We're building long-term partnerships, not selling software licenses. Your success becomes our success metric.</p>
+                </div>
               </div>
             </div>
             
-            <p className="urgency-warning">⏳ Spots are already going fast.</p>
+            <div className="urgency-dashboard">
+              <div className="dashboard-header">
+                <h4>Q4 2024 Enrollment Status</h4>
+              </div>
+              
+              <div className="urgency-grid">
+                <div className="countdown-card">
+                  <div className="card-header">
+                    <span className="card-icon">⏰</span>
+                    <span className="card-title">Enrollment Closes</span>
+                  </div>
+                  <div className="card-content">
+                    <div id="countdown-display">Loading...</div>
+                  </div>
+                </div>
+                
+                <div className="slots-card">
+                  <div className="card-header">
+                    <span className="card-icon">👥</span>
+                    <span className="card-title">Spots Remaining</span>
+                  </div>
+                  <div className="card-content">
+                    <div id="slots-display">Loading...</div>
+                    <div className="slots-progress">
+                      <div className="progress-bar">
+                        <div className="progress-fill" id="progress-fill"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="urgency-notice">
+                <div className="notice-icon">🔥</div>
+                <div className="notice-text">
+                  <strong>Applications are being processed in real-time.</strong> 
+                  Once we reach 10 confirmed partnerships, the enrollment automatically closes until Q1 2025.
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
