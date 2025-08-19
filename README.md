@@ -6,8 +6,11 @@
 - **Features**: Hormozi-style copy, dopamine-charged design, countdown timer, scarcity mechanics, form automation
 
 ## 🌐 URLs
+- **🚀 LIVE PRODUCTION**: https://developer-dopamine.pages.dev
+- **Current Deployment**: https://449573c7.developer-dopamine.pages.dev
+- **API Endpoint**: https://developer-dopamine.pages.dev/api/apply
+- **GitHub Repository**: https://github.com/Julianb233/developers-dopamine
 - **Development**: https://3000-icaynvclojkqkspalmz72-6532622b.e2b.dev
-- **API Endpoint**: https://3000-icaynvclojkqkspalmz72-6532622b.e2b.dev/api/apply
 
 ## 🎯 Currently Completed Features
 - ✅ **Hero Section**: Bold headline with Hormozi-style value proposition
@@ -79,10 +82,12 @@ window.DD_CONFIG = {
 ```
 
 ## 🚀 Deployment Status
-- **Platform**: Cloudflare Pages ⏳ (Ready for deployment)
-- **Environment**: Development ✅ Active
+- **Platform**: Cloudflare Pages ✅ LIVE
+- **Production URL**: https://developer-dopamine.pages.dev ✅ Active
+- **Current Deployment**: https://449573c7.developer-dopamine.pages.dev ✅ Active
 - **Build Status**: ✅ Successful
 - **API Status**: ✅ Functional
+- **GitHub Sync**: ✅ Connected
 - **Last Updated**: 2024-08-19
 
 ## 📋 Features Not Yet Implemented
