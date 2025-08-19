@@ -217,46 +217,46 @@ export const SupplyChainOraclePage = () => {
                     <span className="battery">89%</span>
                   </div>
                   <div className="app-header">
-                    <h4>Supply Chain Oracle</h4>
-                    <div className="alert-badge">7 Predictions</div>
+                    <span className="app-title">Supply Chain Oracle</span>
+                    <div className="alert-badge">7</div>
                   </div>
                   <div className="oracle-predictions">
                     <div className="prediction-item critical">
                       <span className="prediction-icon">⚠️</span>
                       <div className="prediction-text">
-                        <strong>Phoenix Steel: 67% bankruptcy risk</strong>
-                        <span>Action required in 6 days</span>
+                        <strong className="prediction-title">Phoenix Steel: 67% risk</strong>
+                        <span className="prediction-detail">Action in 6 days</span>
                       </div>
                     </div>
                     <div className="prediction-item opportunity">
                       <span className="prediction-icon">💰</span>
                       <div className="prediction-text">
-                        <strong>Lumber pre-hurricane pricing</strong>
-                        <span>Save $340K if ordered today</span>
+                        <strong className="prediction-title">Lumber pre-hurricane pricing</strong>
+                        <span className="prediction-detail">Save $340K today</span>
                       </div>
                     </div>
                     <div className="prediction-item miracle">
                       <span className="prediction-icon">✨</span>
                       <div className="prediction-text">
-                        <strong>Miracle elevators found</strong>
-                        <span>Dubai project liquidation</span>
+                        <strong className="prediction-title">Miracle elevators found</strong>
+                        <span className="prediction-detail">Dubai liquidation</span>
                       </div>
                     </div>
                   </div>
                   <div className="oracle-actions">
-                    <button className="oracle-btn primary">Execute Recommendations</button>
-                    <button className="oracle-btn secondary">View Supplier Matrix</button>
+                    <button className="oracle-btn primary">Execute</button>
+                    <button className="oracle-btn secondary">View Matrix</button>
                   </div>
                 </div>
               </div>
               <div className="ux-explanation">
-                <h3>iPhone Oracle Experience:</h3>
+                <h3>Mobile Oracle Features:</h3>
                 <ul>
-                  <li><strong>Prediction Notifications:</strong> Critical alerts delivered instantly</li>
-                  <li><strong>Swipe Actions:</strong> Approve supplier switches with gestures</li>
-                  <li><strong>Voice Commands:</strong> "Oracle, find me concrete suppliers"</li>
-                  <li><strong>Emergency Mode:</strong> One-tap access to alternative suppliers</li>
-                  <li><strong>Satellite View:</strong> Real-time supplier facility monitoring</li>
+                  <li><strong>Instant Predictions:</strong> Critical alerts delivered in real-time</li>
+                  <li><strong>Quick Actions:</strong> Approve supplier switches with simple taps</li>
+                  <li><strong>Voice Integration:</strong> Natural language supplier searches</li>
+                  <li><strong>Emergency Access:</strong> One-tap alternative supplier directory</li>
+                  <li><strong>Live Monitoring:</strong> Real-time supplier facility status</li>
                 </ul>
               </div>
             </div>

@@ -3466,3 +3466,136 @@ h4 { font-size: var(--text-xl); }
   0%, 100% { transform: translateY(0px) rotate(0deg); }
   50% { transform: translateY(-20px) rotate(5deg); }
 }
+/* iPhone Mockup Natural Text Sizing */
+.app-title {
+  font-size: var(--text-sm) !important;
+  font-weight: 600 !important;
+  color: var(--dd-white) !important;
+}
+
+.bleed-text {
+  font-size: var(--text-xs) !important;
+  color: var(--dd-danger) !important;
+  display: block !important;
+  margin: var(--space-2) 0 !important;
+  font-weight: 600 !important;
+}
+
+.alert-text {
+  font-size: var(--text-xs) !important;
+  color: var(--dd-white) !important;
+  opacity: 0.9 !important;
+  line-height: 1.2 !important;
+}
+
+.stop-bleeding-btn {
+  font-size: var(--text-xs) !important;
+  font-weight: 600 !important;
+  padding: var(--space-1) var(--space-2) !important;
+  background: var(--dd-danger) !important;
+  color: var(--dd-white) !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  margin-top: var(--space-2) !important;
+  cursor: pointer !important;
+}
+
+.bleeding-indicator {
+  text-align: center !important;
+  margin: var(--space-4) 0 !important;
+  padding: var(--space-4) !important;
+  background: rgba(255, 0, 0, 0.1) !important;
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid rgba(255, 0, 0, 0.3) !important;
+}
+
+.bleed-animation {
+  font-size: var(--text-2xl) !important;
+  margin-bottom: var(--space-2) !important;
+  animation: pulse 1s infinite !important;
+}
+
+/* Override existing styles for more natural mobile look */
+.iphone-screen .stat {
+  font-size: var(--text-xs) !important;
+  padding: var(--space-2) !important;
+  font-weight: 500 !important;
+}
+
+.iphone-screen .alert-item {
+  font-size: var(--text-xs) !important;
+  gap: var(--space-2) !important;
+  padding: var(--space-2) !important;
+}
+
+.iphone-screen .quick-stats {
+  display: flex !important;
+  justify-content: space-between !important;
+  margin: var(--space-3) 0 !important;
+  padding: 0 !important;
+}
+
+/* Oracle-specific iPhone elements */
+.prediction-title {
+  font-size: var(--text-xs) !important;
+  font-weight: 600 !important;
+  color: var(--dd-white) !important;
+  display: block !important;
+  line-height: 1.3 !important;
+}
+
+.prediction-detail {
+  font-size: var(--text-xs) !important;
+  color: var(--dd-white) !important;
+  opacity: 0.7 !important;
+  display: block !important;
+  margin-top: var(--space-1) !important;
+}
+
+.oracle-btn {
+  font-size: var(--text-xs) !important;
+  font-weight: 600 !important;
+  padding: var(--space-2) var(--space-3) !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  margin: var(--space-1) var(--space-1) !important;
+  cursor: pointer !important;
+}
+
+.oracle-btn.primary {
+  background: var(--dd-accent) !important;
+  color: var(--dd-white) !important;
+}
+
+.oracle-btn.secondary {
+  background: rgba(255, 255, 255, 0.2) !important;
+  color: var(--dd-white) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.oracle-actions {
+  display: flex !important;
+  gap: var(--space-2) !important;
+  margin-top: var(--space-4) !important;
+  justify-content: center !important;
+}
+
+.prediction-text {
+  flex: 1 !important;
+}
+
+.prediction-item {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: var(--space-2) !important;
+  padding: var(--space-2) !important;
+  margin-bottom: var(--space-2) !important;
+  border-radius: var(--radius-sm) !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+}
+
+.prediction-icon {
+  font-size: var(--text-sm) !important;
+  flex-shrink: 0 !important;
+  margin-top: var(--space-1) !important;
+}

@@ -6,197 +6,163 @@ export const BudgetGuardianPage = () => {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Budget Guardian - Stop Bleeding Money on Your Next Build</title>
+        <title>Budget Guardian - Developer Dopamine AI Agents</title>
         <link href="/static/style.css" rel="stylesheet" />
-        <meta name="description" content="The AI that catches budget hemorrhaging before your accountant does. Real estate developers using Budget Guardian haven't had a cost overrun in 18 months." />
+        <meta name="description" content="AI-powered budget management that tracks every dollar, predicts overruns, and keeps construction projects profitable. See how Budget Guardian transforms daily financial operations." />
       </head>
       <body>
         <Navigation />
 
         {/* Hero Section */}
-        <section className="hero-section bg-primary text-white">
+        <section className="hero-section">
+          <div className="hero-background-pattern"></div>
+          <div className="hero-gradient-overlay"></div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
-                <div className="badge text-accent">COST KILLER</div>
-                <h1 className="hero-title">Budget Guardian</h1>
-                <p className="hero-subtitle">
-                  The AI that knows you're about to get screwed on material costs <strong>3 weeks before your supplier calls</strong> with the "bad news."
+                <div className="hero-badge">
+                  <span className="badge-text">COST KILLER</span>
+                </div>
+                <h1 className="hero-headline">Budget Guardian</h1>
+                <p className="hero-subheadline">
+                  AI that watches every dollar like a hawk and tells you exactly when you're about to blow your budget—before it's too late.
                 </p>
-                <div className="skeptic-proof">
-                  <div className="proof-item">
-                    <span className="proof-label">Last "Surprise" Cost Overrun:</span>
-                    <span className="proof-value">18 months ago</span>
+                <div className="hero-stats">
+                  <div className="stat-item">
+                    <span className="stat-number">23%</span>
+                    <span className="stat-label">Average Cost Reduction</span>
                   </div>
-                  <div className="proof-item">
-                    <span className="proof-label">Average Developer Saves:</span>
-                    <span className="proof-value">$340K per project</span>
+                  <div className="stat-item">
+                    <span className="stat-number">87%</span>
+                    <span className="stat-label">Budget Accuracy</span>
                   </div>
-                  <div className="proof-item">
-                    <span className="proof-label">Time to Payback:</span>
-                    <span className="proof-value">14 days</span>
+                  <div className="stat-item">
+                    <span className="stat-number">48hrs</span>
+                    <span className="stat-label">Early Warning Time</span>
                   </div>
                 </div>
               </div>
-              <div className="quirky-features">
-                <h3>Weirdly Specific Features You Won't Find Anywhere Else:</h3>
-                <ul className="quirky-list">
-                  <li><strong>"Subcontractor Bullshit Detector"</strong> - Flags when change orders smell fishy</li>
-                  <li><strong>"The Bleeding Indicator"</strong> - Shows exactly where money disappears (spoiler: it's always HVAC)</li>
-                  <li><strong>"Supplier Loyalty Tax Calculator"</strong> - Quantifies how much extra you pay for "trusted" vendors</li>
-                  <li><strong>"The Oh Shit Alert"</strong> - Emergency notifications that actually matter</li>
-                </ul>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* Reality Check Section */}
-        <section className="reality-section bg-dark text-white">
-          <div className="container">
-            <h2>Let's Be Honest About Your Last Project</h2>
-            <div className="reality-grid">
-              <div className="reality-card pain">
-                <h3>What You Told Your Investors</h3>
-                <p>"Construction budget: $2.4M, completion in 8 months, 22% profit margin"</p>
-              </div>
-              <div className="reality-card truth">
-                <h3>What Actually Happened</h3>
-                <p>"Final cost: $3.1M, took 11 months, profit margin: 4% (if you don't count your time)"</p>
-              </div>
-            </div>
-            <p className="reality-truth">
-              <strong>The brutal truth:</strong> 89% of developers underestimate costs by 25%+. 
-              It's not because you're bad at math. It's because you're playing a game where everyone lies about the real numbers.
-            </p>
-          </div>
-        </section>
-
-        {/* Day in the Life Section - Developer Focus */}
+        {/* Day in the Life Section */}
         <section className="timeline-section">
           <div className="container">
-            <h2 className="section-title">How Budget Guardian Actually Works (Real Developer Day)</h2>
-            <p className="section-subtitle">Follow Marcus Chen, developing a 47-unit multifamily in Austin. His Budget Guardian catches problems other developers miss.</p>
+            <h2 className="section-title">A Day in the Life with Budget Guardian</h2>
+            <p className="section-subtitle">Follow Project Manager Sarah as Budget Guardian transforms her daily budget management</p>
             
             <div className="timeline">
-              {/* 5:47 AM */}
+              {/* 6:00 AM */}
               <div className="timeline-item">
-                <div className="timeline-time">5:47 AM</div>
+                <div className="timeline-time">6:00 AM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-alert">COFFEE ALERT</div>
-                  <h3>"Your Concrete Guy Is About To Screw You"</h3>
-                  <p>Marcus gets this text while making coffee: <em>"Lone Star Concrete raised prices 18% overnight. Your Friday pour = $23K over budget. Alternative supplier identified: same quality, 8% cheaper, available Thursday."</em></p>
-                  <div className="developer-mindset">
-                    <strong>Developer Brain:</strong> "How the hell does AI know my concrete guy better than I do?"
-                  </div>
-                  <div className="quirky-detail">
-                    <strong>Quirky Feature:</strong> Budget Guardian monitors supplier social media, news mentions, and vendor gossip networks. Yes, it literally reads construction forums.
+                  <div className="timeline-badge status-alert">ALERT</div>
+                  <h3>Early Warning Notification</h3>
+                  <p>Sarah's phone buzzes with a Budget Guardian alert: "Material costs trending 15% over budget on Riverside Project. Action recommended by 10 AM."</p>
+                  <div className="timeline-impact">
+                    <strong>Without AI:</strong> Sarah discovers the overrun during Friday review, $47K already spent.
                   </div>
                 </div>
               </div>
 
-              {/* 7:23 AM */}
+              {/* 7:30 AM */}
               <div className="timeline-item">
-                <div className="timeline-time">7:23 AM</div>
+                <div className="timeline-time">7:30 AM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-investigate">SNIFF TEST</div>
-                  <h3>The "Subcontractor Bullshit Detector" Activates</h3>
-                  <p>HVAC contractor emails a change order: <em>"Discovered additional ductwork needed for code compliance - $47K."</em> Budget Guardian responds in 4 minutes: <em>"BULLSHIT PROBABILITY: 73%. This 'discovery' happens on 84% of this contractor's jobs. Here's the real story..."</em></p>
-                  <div className="developer-relief">
-                    <strong>Marcus thinks:</strong> "Finally, something that calls out these guys on their games."
-                  </div>
-                  <div className="psychology-trigger">
-                    <strong>Why this works:</strong> Developers HATE being played for suckers. They respect straight talk about contractor manipulation.
+                  <div className="timeline-badge status-analysis">INSIGHT</div>
+                  <h3>Coffee & Context</h3>
+                  <p>Over coffee, Sarah opens the Budget Guardian dashboard. AI has already analyzed 14 similar projects and predicts final overrun will be $78K if current trend continues.</p>
+                  <div className="timeline-metrics">
+                    <span className="metric">Risk Level: <strong>High</strong></span>
+                    <span className="metric">Confidence: <strong>94%</strong></span>
                   </div>
                 </div>
               </div>
 
-              {/* 9:15 AM */}
+              {/* 8:15 AM */}
               <div className="timeline-item">
-                <div className="timeline-time">9:15 AM</div>
+                <div className="timeline-time">8:15 AM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-money">BLEEDING INDICATOR</div>
-                  <h3>"The Money Hemorrhage Visualization"</h3>
-                  <p>Budget Guardian shows a real-time "bleeding" animation: <em>"Your project is bleeding $3,400 per day due to: Inefficient labor scheduling (68%), material waste (22%), change order creep (10%)."</em></p>
-                  <div className="visceral-impact">
-                    <strong>Visual Psychology:</strong> Seeing money "bleed" creates urgency that spreadsheets never could.
-                  </div>
-                  <div className="quirky-detail">
-                    <strong>Quirky Feature:</strong> The bleeding gets faster/slower based on real cash flow. Developers become addicted to "stopping the bleeding."
+                  <div className="timeline-badge status-action">ACTION</div>
+                  <h3>Supplier Negotiation Prep</h3>
+                  <p>Budget Guardian provides talking points: "Concrete supplier pricing increased 18% above contract. Here are 3 alternative suppliers with better rates and delivery schedules."</p>
+                  <div className="timeline-benefit">
+                    <strong>AI Advantage:</strong> Pre-negotiation research completed in seconds, not hours.
                   </div>
                 </div>
               </div>
 
-              {/* 11:30 AM */}
+              {/* 9:00 AM */}
               <div className="timeline-item">
-                <div className="timeline-time">11:30 AM</div>
+                <div className="timeline-time">9:00 AM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-negotiate">LEVERAGE</div>
-                  <h3>The "Supplier Loyalty Tax" Reality Check</h3>
-                  <p>Budget Guardian calculates: <em>"Your 'trusted' electrical supplier charges 23% premium vs. market rate. Loyalty tax this year: $67K. Want to see what competitive pricing looks like?"</em></p>
-                  <div className="ego-protection">
-                    <strong>Smart Psychology:</strong> Frames overpaying as "loyalty tax" not "getting ripped off" - protects developer ego while motivating change.
-                  </div>
-                  <div className="action-trigger">
-                    <strong>Result:</strong> Marcus calls electrician, negotiates 15% discount by mentioning "market analysis." Saves $34K without burning bridges.
+                  <div className="timeline-badge status-success">SUCCESS</div>
+                  <h3>Site Meeting Intelligence</h3>
+                  <p>During site meeting, foreman mentions concrete delays. Sarah already has alternatives queued up thanks to Budget Guardian's morning brief. Decision made in 5 minutes instead of days.</p>
+                </div>
+              </div>
+
+              {/* 10:30 AM */}
+              <div className="timeline-item">
+                <div className="timeline-time">10:30 AM</div>
+                <div className="timeline-content">
+                  <div className="timeline-badge status-monitor">TRACK</div>
+                  <h3>Real-time Budget Tracking</h3>
+                  <p>Every invoice and time card automatically flows into Budget Guardian. Sarah watches the budget dashboard update in real-time as expenses are logged.</p>
+                  <div className="timeline-data">
+                    <div className="data-point">Labor: <span className="on-budget">2% under</span></div>
+                    <div className="data-point">Materials: <span className="over-budget">12% over</span></div>
+                    <div className="data-point">Equipment: <span className="on-budget">On track</span></div>
                   </div>
                 </div>
               </div>
 
-              {/* 1:45 PM */}
+              {/* 12:00 PM */}
               <div className="timeline-item">
-                <div className="timeline-time">1:45 PM</div>
+                <div className="timeline-time">12:00 PM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-predict">CRYSTAL BALL</div>
-                  <h3>"The Profit Erosion Predictor"</h3>
-                  <p>Budget Guardian forecasts: <em>"At current burn rate, your 22% target margin becomes 8.4% by completion. Here's the 3-move chess game to fix it..."</em></p>
-                  <div className="strategic-thinking">
-                    <strong>Developer Appeal:</strong> Shows exactly how current decisions impact final profit margins. Developers think in ROI, not just costs.
-                  </div>
-                  <div className="competitive-advantage">
-                    <strong>Quirky Feature:</strong> "Profit Erosion Predictor" runs 10,000 Monte Carlo simulations to show best/worst case scenarios.
+                  <div className="timeline-badge status-predict">PREDICT</div>
+                  <h3>Lunch Break Predictions</h3>
+                  <p>During lunch, Sarah checks Budget Guardian's weekly forecast. AI predicts next week's electrical work will finish $12K under budget due to efficient crew performance.</p>
+                  <div className="timeline-opportunity">
+                    <strong>Opportunity Identified:</strong> Reallocate savings to upgrade fixtures, increasing project value.
                   </div>
                 </div>
               </div>
 
-              {/* 3:20 PM */}
+              {/* 2:00 PM */}
               <div className="timeline-item">
-                <div className="timeline-time">3:20 PM</div>
+                <div className="timeline-time">2:00 PM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-shield">OH SHIT</div>
-                  <h3>The "Oh Shit Alert" That Actually Matters</h3>
-                  <p>Red alert notification: <em>"MATERIAL SHORTAGE INCOMING: Your flooring supplier just lost their main distributor. 73% chance of 3-week delay unless you act in next 6 hours. Alternative sources ready for immediate order."</em></p>
-                  <div className="crisis-management">
-                    <strong>Developer Panic:</strong> "How did this thing know about supplier problems before my supplier did?"
-                  </div>
-                  <div className="quirky-detail">
-                    <strong>Quirky Feature:</strong> Budget Guardian monitors shipping manifests, supplier financials, and industry news to predict disruptions. It's like having an insider in every company.
+                  <div className="timeline-badge status-optimize">OPTIMIZE</div>
+                  <h3>Change Order Impact Analysis</h3>
+                  <p>Client requests bathroom upgrade. Budget Guardian instantly calculates: "Cost: $23K, Impact on timeline: 4 days, Effect on overall profit margin: -2.3%"</p>
+                  <div className="timeline-decision">
+                    <strong>Decision Support:</strong> Recommend alternative upgrade saving $8K with same aesthetic impact.
                   </div>
                 </div>
               </div>
 
-              {/* 4:30 PM */}
+              {/* 4:00 PM */}
               <div className="timeline-item">
-                <div className="timeline-time">4:30 PM</div>
+                <div className="timeline-time">4:00 PM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-flex">POWER MOVE</div>
-                  <h3>"The Contractor Leverage Calculator"</h3>
-                  <p>Before calling his GC about delays, Budget Guardian provides: <em>"Your GC's cash flow analysis: They need this job more than you need them. Negotiation leverage: 78%. Suggested approach: Firm but supportive. Avoid: Threats or ultimatums."</em></p>
-                  <div className="relationship-dynamics">
-                    <strong>Psychological Edge:</strong> Understanding the other party's financial position transforms negotiations from emotional to strategic.
-                  </div>
+                  <div className="timeline-badge status-report">REPORT</div>
+                  <h3>Stakeholder Communication</h3>
+                  <p>Budget Guardian auto-generates client update: "Project 87% complete, 3% under budget, 2 days ahead of schedule. Next milestone: Final inspections scheduled for Tuesday."</p>
                 </div>
               </div>
 
-              {/* 6:00 PM */}
+              {/* 5:30 PM */}
               <div className="timeline-item">
-                <div className="timeline-time">6:00 PM</div>
+                <div className="timeline-time">5:30 PM</div>
                 <div className="timeline-content">
-                  <div className="timeline-badge status-victory">WINNING</div>
-                  <h3>End of Day: The "Victory Lap" Report</h3>
-                  <p>Budget Guardian summary: <em>"Today's saves: $67K (supplier negotiation + change order challenge). Project health: Excellent. Profit protection: On track for 19.2% margin. Sleep well, Marcus."</em></p>
-                  <div className="satisfaction">
-                    <strong>Psychological Reward:</strong> Daily validation that the system is actively protecting profit. Creates addictive sense of control.
+                  <div className="timeline-badge status-plan">PLAN</div>
+                  <h3>Tomorrow's Action Items</h3>
+                  <p>Before leaving, Sarah reviews Budget Guardian's recommendations for tomorrow: "Schedule final plumbing inspection, confirm flooring delivery timing, review electrical final costs."</p>
+                  <div className="timeline-peace">
+                    <strong>Peace of Mind:</strong> Every detail tracked, nothing falls through the cracks.
                   </div>
                 </div>
               </div>
@@ -204,157 +170,130 @@ export const BudgetGuardianPage = () => {
           </div>
         </section>
 
-        {/* Skeptic Conversion Section */}
-        <section className="skeptic-section bg-light">
+        {/* Impact Metrics */}
+        <section className="impact-section bg-light">
           <div className="container">
-            <h2>"Yeah Right, Another AI Snake Oil Pitch"</h2>
-            <div className="skeptic-grid">
-              <div className="skeptic-concern">
-                <h3>Your Concern: "AI doesn't understand construction"</h3>
-                <p className="reality-check">
-                  <strong>Fair point.</strong> 97% of "construction AI" is built by tech bros who've never held a hammer.
-                  Budget Guardian was trained on $2.3B worth of actual construction projects. It knows why concrete costs more on Fridays.
-                </p>
+            <h2 className="section-title">The Bottom Line Impact</h2>
+            <div className="metrics-grid">
+              <div className="metric-card">
+                <h3>Cost Overruns Prevented</h3>
+                <div className="metric-value">$847K</div>
+                <p>Average savings per project over 6 months</p>
               </div>
-              <div className="skeptic-concern">
-                <h3>Your Concern: "This sounds too good to be true"</h3>
-                <p className="reality-check">
-                  <strong>Healthy skepticism.</strong> Here's what Budget Guardian CAN'T do: Make your subs show up on time, fix your architect's mistakes, or turn bad decisions into good ones. It just prevents the financial surprises that kill deals.
-                </p>
+              <div className="metric-card">
+                <h3>Budget Accuracy</h3>
+                <div className="metric-value">94.7%</div>
+                <p>Final costs vs. predicted costs</p>
               </div>
-              <div className="skeptic-concern">
-                <h3>Your Concern: "What if it's wrong?"</h3>
-                <p className="reality-check">
-                  <strong>Valid worry.</strong> Budget Guardian is wrong about 6% of predictions. Your gut instinct is wrong about 43% of the time. Which odds do you prefer?
-                </p>
+              <div className="metric-card">
+                <h3>Early Warning Time</h3>
+                <div className="metric-value">2.3 weeks</div>
+                <p>Average advance notice of budget issues</p>
+              </div>
+              <div className="metric-card">
+                <h3>Admin Time Saved</h3>
+                <div className="metric-value">18 hrs/week</div>
+                <p>Less time on budget tracking and reporting</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* Mobile UX Preview */}
-        <section className="mobile-ux-section">
+        {/* Technical Deep Dive */}
+        <section className="technical-section">
           <div className="container">
-            <h2>What This Looks Like on Your iPhone</h2>
-            <div className="mobile-preview">
-              <div className="iphone-mockup">
-                <div className="iphone-screen">
-                  <div className="ios-status-bar">
-                    <span className="time">9:41 AM</span>
-                    <span className="battery">100%</span>
-                  </div>
-                  <div className="app-header">
-                    <h4>Budget Guardian</h4>
-                    <div className="alert-badge">3 Alerts</div>
-                  </div>
-                  <div className="bleeding-indicator">
-                    <div className="bleed-animation">💸</div>
-                    <p>Bleeding: $2,340/day</p>
-                    <div className="stop-bleeding-btn">STOP THE BLEEDING</div>
-                  </div>
-                  <div className="quick-stats">
-                    <div className="stat">Budget Health: 87%</div>
-                    <div className="stat">Margin: 19.2%</div>
-                    <div className="stat">Days Left: 45</div>
-                  </div>
-                  <div className="alerts-preview">
-                    <div className="alert-item urgent">
-                      <span className="alert-icon">🚨</span>
-                      <span>Concrete price spike incoming</span>
-                    </div>
-                    <div className="alert-item warning">
-                      <span className="alert-icon">⚠️</span>
-                      <span>HVAC change order smells fishy</span>
-                    </div>
-                    <div className="alert-item good">
-                      <span className="alert-icon">✅</span>
-                      <span>Electrical crew ahead of schedule</span>
-                    </div>
-                  </div>
-                </div>
+            <h2 className="section-title">How Budget Guardian Works</h2>
+            <div className="tech-grid">
+              <div className="tech-card">
+                <div className="tech-icon">LEARN</div>
+                <h3>Historical Analysis</h3>
+                <p>Analyzes patterns from 500+ completed projects to identify cost risk factors and predict overruns with 94% accuracy.</p>
               </div>
-              <div className="ux-explanation">
-                <h3>iPhone UX Design Principles:</h3>
-                <ul>
-                  <li><strong>Glanceable Alerts:</strong> Critical info in under 3 seconds</li>
-                  <li><strong>Gesture-Based Actions:</strong> Swipe to approve/reject change orders</li>
-                  <li><strong>Visual Bleeding:</strong> Animated money loss that hurts to watch</li>
-                  <li><strong>One-Thumb Navigation:</strong> All controls within thumb reach</li>
-                  <li><strong>Offline Capability:</strong> Works on job sites with poor signal</li>
-                </ul>
+              <div className="tech-card">
+                <div className="tech-icon">WATCH</div>
+                <h3>Real-time Monitoring</h3>
+                <p>Connects to accounting systems, supplier invoices, and time tracking to monitor every expense as it happens.</p>
+              </div>
+              <div className="tech-card">
+                <div className="tech-icon">ALERT</div>
+                <h3>Predictive Warnings</h3>
+                <p>Machine learning models identify budget drift 2-3 weeks before traditional reporting methods catch issues.</p>
+              </div>
+              <div className="tech-card">
+                <div className="tech-icon">GUIDE</div>
+                <h3>Action Recommendations</h3>
+                <p>Provides specific, actionable solutions with cost-benefit analysis and alternative vendor suggestions.</p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* ROI for Developers */}
-        <section className="roi-reality">
+        {/* Integration Benefits */}
+        <section className="integration-section bg-light">
           <div className="container">
-            <div className="roi-card developer-focused">
-              <h3>Real Numbers for Real Developers</h3>
-              <p>Based on 300-unit multifamily project ($45M total development cost):</p>
-              <div className="roi-breakdown realistic">
+            <h2 className="section-title">Seamless Integration</h2>
+            <div className="integration-grid">
+              <div className="integration-item">
+                <h4>QuickBooks/Sage Integration</h4>
+                <p>Automatic expense categorization and budget variance reporting</p>
+              </div>
+              <div className="integration-item">
+                <h4>Project Management Tools</h4>
+                <p>Syncs with Procore, Buildertrend, and custom PM systems</p>
+              </div>
+              <div className="integration-item">
+                <h4>Supplier Networks</h4>
+                <p>Real-time pricing updates and alternative supplier recommendations</p>
+              </div>
+              <div className="integration-item">
+                <h4>Mobile Accessibility</h4>
+                <p>Full dashboard access and alerts on any device, anywhere</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* ROI Calculator Preview */}
+        <section className="roi-preview">
+          <div className="container">
+            <div className="roi-card">
+              <h3>Budget Guardian ROI Calculator</h3>
+              <p>For a $2M annual construction volume:</p>
+              <div className="roi-breakdown">
                 <div className="roi-item">
-                  <span className="roi-label">Typical cost overruns you'll avoid:</span>
-                  <span className="roi-value">$2.1M</span>
-                  <span className="roi-note">(Industry average: 15-20% over budget)</span>
+                  <span className="roi-label">Typical cost overruns prevented:</span>
+                  <span className="roi-value">$147K/year</span>
                 </div>
                 <div className="roi-item">
-                  <span className="roi-label">Time savings (no more budget firefighting):</span>
-                  <span className="roi-value">$180K</span>
-                  <span className="roi-note">(Your time = $150/hour, save 20hrs/week)</span>
+                  <span className="roi-label">Admin time savings (18hrs/week):</span>
+                  <span className="roi-value">$47K/year</span>
                 </div>
                 <div className="roi-item">
-                  <span className="roi-label">Improved final profit margin:</span>
-                  <span className="roi-value">$900K</span>
-                  <span className="roi-note">(2% margin improvement on $45M project)</span>
+                  <span className="roi-label">Budget Guardian investment:</span>
+                  <span className="roi-value">$24K/year</span>
                 </div>
-                <div className="roi-investment">
-                  <span className="roi-label">Budget Guardian annual cost:</span>
-                  <span className="roi-value">$89K</span>
-                  <span className="roi-note">(Less than one change order surprise)</span>
-                </div>
-                <div className="roi-total developer">
-                  <span className="roi-label"><strong>Net Profit Protection:</strong></span>
-                  <span className="roi-value"><strong>$3.09M</strong></span>
-                  <span className="roi-confidence">(Conservative estimate, 12-month analysis)</span>
+                <div className="roi-total">
+                  <span className="roi-label"><strong>Net ROI:</strong></span>
+                  <span className="roi-value"><strong>$170K (708% return)</strong></span>
                 </div>
               </div>
-              <div className="roi-reality-check">
-                <p><strong>Reality Check:</strong> Even if Budget Guardian only catches ONE major cost overrun, it pays for itself 23x over. Everything else is pure profit protection.</p>
-              </div>
+              <a href="/apply" className="btn-primary">Calculate Your ROI</a>
             </div>
           </div>
         </section>
 
-        {/* Final CTA - Developer Psychology */}
+        {/* CTA Section */}
         <section className="cta-section bg-primary text-white">
-          <div className="container">
-            <h2>Stop Getting Financially Blindsided</h2>
-            <div className="cta-psychology">
-              <div className="cta-truth">
-                <p>Look, you didn't get into development to become an expert in construction cost accounting. You got in to make money building things people need.</p>
-                <p><strong>Budget Guardian handles the money-watching part</strong> so you can focus on the deal-making part.</p>
-              </div>
-              <div className="urgency-real">
-                <div className="urgency-stat">
-                  <span className="urgency-number">7</span>
-                  <span className="urgency-text">developers currently in our pilot program</span>
-                </div>
-                <div className="urgency-stat">
-                  <span className="urgency-number">3</span>
-                  <span className="urgency-text">spots remaining for Q1 2025</span>
-                </div>
-                <p className="urgency-why">We limit pilot participants because each implementation requires custom integration with your existing systems. Quality over quantity.</p>
-              </div>
-              <div className="cta-buttons">
-                <a href="/apply" className="btn-accent btn-large">Get Budget Guardian</a>
-                <a href="/case-studies" className="btn-secondary-outline">See Developer Case Studies</a>
-              </div>
-              <div className="guarantee-real">
-                <p><strong>Money-Back Guarantee:</strong> If Budget Guardian doesn't catch at least $50K in potential overruns in your first 90 days, you get a full refund plus $10K for wasting your time.</p>
-              </div>
+          <div className="container text-center">
+            <h2>Stop Budget Surprises Before They Start</h2>
+            <p className="cta-subtitle">
+              Join 200+ construction companies using Budget Guardian to protect their profit margins
+            </p>
+            <div className="cta-buttons">
+              <a href="/apply" className="btn-accent btn-large">Apply for Early Access</a>
+              <a href="/case-studies" className="btn-secondary-outline">See Case Studies</a>
             </div>
+            <p className="cta-note">Implementation typically takes 48-72 hours</p>
           </div>
         </section>
 
@@ -363,7 +302,7 @@ export const BudgetGuardianPage = () => {
             <div className="footer-content">
               <div className="footer-brand">
                 <div className="brand-logo">DEVELOPER DOPAMINE</div>
-                <p>AI Agents for Real Estate Development</p>
+                <p>AI Agents for Construction Intelligence</p>
               </div>
               <div className="footer-links">
                 <div className="link-group">
@@ -371,20 +310,17 @@ export const BudgetGuardianPage = () => {
                   <a href="/use-cases/schedule-intelligence">Schedule Intelligence</a>
                   <a href="/use-cases/budget-guardian">Budget Guardian</a>
                   <a href="/use-cases/document-processor">Document Processor</a>
-                  <a href="/use-cases/workforce-tracker">Workforce Tracker</a>
-                  <a href="/use-cases/communication-hub">Communication Hub</a>
-                  <a href="/use-cases/supply-chain-oracle">Supply Chain Oracle</a>
                 </div>
                 <div className="link-group">
                   <h4>Company</h4>
-                  <a href="/case-studies">Developer Case Studies</a>
+                  <a href="/case-studies">Case Studies</a>
                   <a href="/how-it-works">How It Works</a>
                   <a href="/apply">Apply Now</a>
                 </div>
               </div>
             </div>
             <div className="footer-bottom">
-              <p>&copy; 2024 Developer Dopamine. Built by developers, for developers who refuse to lose money on preventable surprises.</p>
+              <p>&copy; 2024 Developer Dopamine. Built for construction professionals who demand results.</p>
             </div>
           </div>
         </footer>

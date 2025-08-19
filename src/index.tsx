@@ -3,12 +3,17 @@ import { cors } from 'hono/cors'
 import { serveStatic } from 'hono/cloudflare-workers'
 import { renderer } from './renderer'
 import { HomePage } from './pages/home'
+import { HowItWorksPage } from './pages/how-it-works'
+import { UseCasesOverviewPage } from './pages/use-cases-overview'
 import { ScheduleIntelligencePage } from './pages/use-cases/schedule-intelligence'
 import { BudgetGuardianPage } from './pages/use-cases/budget-guardian'
 import { DocumentProcessorPage } from './pages/use-cases/document-processor'
 import { WorkforceTrackerPage } from './pages/use-cases/workforce-tracker'
 import { CommunicationHubPage } from './pages/use-cases/communication-hub'
 import { SupplyChainOraclePage } from './pages/use-cases/supply-chain-oracle'
+import { ROICalculatorPage } from './pages/roi-calculator'
+import { CaseStudiesPage } from './pages/case-studies'
+import { ApplyPage } from './pages/apply'
 import { PortalPage } from './pages/portal'
 import { ProjectTrackerPage } from './pages/project-tracker'
 
@@ -27,6 +32,26 @@ app.use(renderer)
 // Route definitions
 app.get('/', (c) => {
   return c.render(<HomePage />)
+})
+
+app.get('/how-it-works', (c) => {
+  return c.render(<HowItWorksPage />)
+})
+
+app.get('/use-cases', (c) => {
+  return c.render(<UseCasesOverviewPage />)
+})
+
+app.get('/roi-calculator', (c) => {
+  return c.render(<ROICalculatorPage />)
+})
+
+app.get('/case-studies', (c) => {
+  return c.render(<CaseStudiesPage />)
+})
+
+app.get('/apply', (c) => {
+  return c.render(<ApplyPage />)
 })
 
 // Use case pages
