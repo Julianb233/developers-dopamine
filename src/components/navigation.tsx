@@ -31,6 +31,7 @@ export const Navigation: FC = () => {
               <a href="/use-cases/supply-chain-oracle" className="dropdown-link">Supply Chain Oracle</a>
             </div>
           </div>
+          <a href="/portal" className="nav-link">Portal</a>
           <a href="/roi-calculator" className="nav-link">ROI Calculator</a>
           <a href="/case-studies" className="nav-link">Case Studies</a>
         </div>
