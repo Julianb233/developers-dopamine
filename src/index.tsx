@@ -10,6 +10,7 @@ import { WorkforceTrackerPage } from './pages/use-cases/workforce-tracker'
 import { CommunicationHubPage } from './pages/use-cases/communication-hub'
 import { SupplyChainOraclePage } from './pages/use-cases/supply-chain-oracle'
 import { PortalPage } from './pages/portal'
+import { ProjectTrackerPage } from './pages/project-tracker'
 
 const app = new Hono()
 
@@ -56,6 +57,11 @@ app.get('/use-cases/supply-chain-oracle', (c) => {
 // Portal page
 app.get('/portal', (c) => {
   return c.render(<PortalPage />)
+})
+
+// Project tracker page
+app.get('/project-tracker', (c) => {
+  return c.render(<ProjectTrackerPage />)
 })
 
 // Backend Portal API Endpoints
