@@ -17,8 +17,8 @@ export const PortalPage = () => {
         <section className="portal-header bg-primary text-white">
           <div className="container">
             <div className="portal-hero">
-              <h1>Developer Portal</h1>
-              <p>Connect to your AI agents and backend automation systems</p>
+              <h1 style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1', marginBottom: 'var(--fluid-md)'}}>Developer Portal</h1>
+              <p style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)'}}>Connect to your AI agents and backend automation systems</p>
               <div className="portal-status">
                 <div className="status-item">
                   <span className="status-label">Backend Status:</span>
@@ -40,7 +40,7 @@ export const PortalPage = () => {
         {/* Integration Status Dashboard */}
         <section className="integration-dashboard">
           <div className="container">
-            <h2>Backend Integration Status</h2>
+            <h2 style={{fontSize: 'var(--fluid-text-4xl)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Backend Integration Status</h2>
             <div className="integration-grid">
               <div className="integration-card active">
                 <div className="integration-icon">📊</div>

@@ -24,11 +24,11 @@ export const HomePage: FC = () => {
               <span className="badge-text">AI Automation for Construction</span>
             </div>
             
-            <h1 className="hero-headline">
+            <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>
               Stop Losing Money To <span className="highlight-gradient">Bad Contractors</span>
             </h1>
             
-            <p className="hero-subheadline">
+            <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
               Your best sub just ghosted you (again). Your budget looks like a crime scene. Your schedule is a joke.
               Here's how AI agents eliminate the chaos so you can build faster, cheaper, and stress-free.
             </p>
@@ -79,7 +79,7 @@ export const HomePage: FC = () => {
         <div className="container">
           <div className="pain-grid">
             <div className="pain-content">
-              <h2>We've All Been Here Before</h2>
+              <h2 style={{fontSize: 'var(--fluid-text-4xl)', marginBottom: 'var(--fluid-lg)'}}>We've All Been Here Before</h2>
               <ul className="pain-list">
                 <li>Your best subcontractor just ghosted you. Again. Two weeks before deadline.</li>
                 <li>The budget spreadsheet looks like a crime scene. Every line item is bleeding red.</li>
@@ -104,8 +104,8 @@ export const HomePage: FC = () => {
       <section className="solution-section" id="solution">
         <div className="container">
           <div className="solution-header">
-            <h2>Six AI Agents That Actually Work</h2>
-            <p className="solution-intro">
+            <h2 style={{fontSize: 'var(--fluid-text-5xl)', textAlign: 'center', marginBottom: 'var(--fluid-md)'}}>Six AI Agents That Actually Work</h2>
+            <p className="solution-intro" style={{fontSize: 'var(--fluid-text-lg)', textAlign: 'center', maxWidth: '48rem', margin: '0 auto var(--fluid-2xl)'}}>
               No more software that promises everything and delivers spreadsheets.<br/>
               These agents handle the grunt work so you can focus on the build:
             </p>
@@ -168,8 +168,8 @@ export const HomePage: FC = () => {
       <section className="value-section">
         <div className="container">
           <div className="value-header">
-            <h2>Quantified ROI That Speaks Your Language</h2>
-            <p className="value-subtitle">Real numbers from real construction projects. No fluff, just measurable impact on your bottom line.</p>
+            <h2 style={{fontSize: 'var(--fluid-text-5xl)', textAlign: 'center', marginBottom: 'var(--fluid-md)'}}>Quantified ROI That Speaks Your Language</h2>
+            <p className="value-subtitle" style={{fontSize: 'var(--fluid-text-lg)', textAlign: 'center', maxWidth: '48rem', margin: '0 auto var(--fluid-2xl)'}}>Real numbers from real construction projects. No fluff, just measurable impact on your bottom line.</p>
           </div>
           
           <div className="value-stack">

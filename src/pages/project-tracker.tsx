@@ -17,8 +17,8 @@ export const ProjectTrackerPage = () => {
         <section className="tracker-header bg-primary text-white">
           <div className="container">
             <div className="tracker-hero">
-              <h1>Real Estate Project Tracker</h1>
-              <p>Industry-standard calculations for development and flipping projects</p>
+              <h1 style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1', marginBottom: 'var(--fluid-md)'}}>Real Estate Project Tracker</h1>
+              <p style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)'}}>Industry-standard calculations for development and flipping projects</p>
               <div className="tracker-features">
                 <div className="feature">✓ Pro Forma Analysis</div>
                 <div className="feature">✓ IRR & Cap Rate Calculations</div>
@@ -32,7 +32,7 @@ export const ProjectTrackerPage = () => {
         {/* Project Type Selection */}
         <section className="project-type-section">
           <div className="container">
-            <h2>Select Project Type</h2>
+            <h2 style={{fontSize: 'var(--fluid-text-4xl)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Select Project Type</h2>
             <div className="project-types">
               <button id="development-btn" className="project-type-btn active" onclick="showProjectType('development')">
                 <div className="type-icon">🏗️</div>

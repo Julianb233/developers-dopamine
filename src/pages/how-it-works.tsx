@@ -23,8 +23,8 @@ export const HowItWorksPage = () => {
                 <div className="hero-badge">
                   <span className="badge-text">HOW IT WORKS</span>
                 </div>
-                <h1 className="hero-headline">AI That Actually Works for Construction</h1>
-                <p className="hero-subheadline">
+                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>AI That Actually Works for Construction</h1>
+                <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
                   No complicated setup. No months of training. Just intelligent automation that starts saving you time and money from day one.
                 </p>
               </div>
@@ -35,7 +35,7 @@ export const HowItWorksPage = () => {
         {/* Process Steps */}
         <section className="process-section">
           <div className="container">
-            <h2 className="section-title">Three Steps to AI-Powered Operations</h2>
+            <h2 className="section-title" style={{fontSize: 'var(--fluid-text-5xl)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Three Steps to AI-Powered Operations</h2>
             
             <div className="process-grid">
               <div className="process-step">
@@ -83,7 +83,7 @@ export const HowItWorksPage = () => {
         {/* Technology Stack */}
         <section className="tech-section bg-light">
           <div className="container">
-            <h2 className="section-title">Built for Construction Professionals</h2>
+            <h2 className="section-title" style={{fontSize: 'var(--fluid-text-5xl)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Built for Construction Professionals</h2>
             <div className="tech-grid">
               <div className="tech-feature">
                 <div className="tech-icon">AI</div>
@@ -112,7 +112,7 @@ export const HowItWorksPage = () => {
         {/* ROI Timeline */}
         <section className="roi-timeline-section">
           <div className="container">
-            <h2 className="section-title">Your ROI Timeline</h2>
+            <h2 className="section-title" style={{fontSize: 'var(--fluid-text-5xl)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Your ROI Timeline</h2>
             <div className="timeline">
               <div className="timeline-item">
                 <div className="timeline-marker">Week 1</div>
@@ -156,8 +156,8 @@ export const HowItWorksPage = () => {
         {/* CTA Section */}
         <section className="cta-section bg-primary text-white">
           <div className="container text-center">
-            <h2>Ready to Transform Your Construction Business?</h2>
-            <p className="cta-subtitle">
+            <h2 style={{fontSize: 'var(--fluid-text-4xl)', marginBottom: 'var(--fluid-md)'}}>Ready to Transform Your Construction Business?</h2>
+            <p className="cta-subtitle" style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)'}}>
               Join 200+ construction companies already using AI to increase profits and reduce stress
             </p>
             <div className="cta-buttons">

@@ -16,12 +16,12 @@ export const ScheduleIntelligencePage: FC = () => {
               <div className="hero-badge">
                 <span className="badge-text">SCHEDULE INTELLIGENCE</span>
               </div>
-              <h1 className="hero-headline">
+              <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>
               Never Miss Another Deadline<br/>
               <span className="highlight-gradient">Because You Saw It Coming</span>
             </h1>
             
-              <p className="hero-subheadline">
+              <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
               Watch a day in the life of a project manager who stopped juggling chaos 
               and started predicting the future. Every delay caught, every bottleneck avoided, 
               every deadline met.
@@ -35,8 +35,8 @@ export const ScheduleIntelligencePage: FC = () => {
       <section className="timeline-section">
         <div className="container">
           <div className="timeline-header">
-            <h2>Monday, 7:42 AM</h2>
-            <p className="timeline-subtitle">Mike opens his laptop. The coffee isn't even ready, but DD already is.</p>
+            <h2 style={{fontSize: 'var(--fluid-text-4xl)', textAlign: 'center', marginBottom: 'var(--fluid-md)'}}>Monday, 7:42 AM</h2>
+            <p className="timeline-subtitle" style={{fontSize: 'var(--fluid-text-lg)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Mike opens his laptop. The coffee isn't even ready, but DD already is.</p>
           </div>
           
           <div className="timeline-grid">

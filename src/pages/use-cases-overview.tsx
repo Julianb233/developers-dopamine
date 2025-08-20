@@ -23,8 +23,8 @@ export const UseCasesOverviewPage = () => {
                 <div className="hero-badge">
                   <span className="badge-text">USE CASES</span>
                 </div>
-                <h1 className="hero-headline">AI Solutions for Every Construction Challenge</h1>
-                <p className="hero-subheadline">
+                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>AI Solutions for Every Construction Challenge</h1>
+                <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
                   From schedule delays to budget overruns, see how our specialized AI agents solve your biggest operational headaches.
                 </p>
               </div>

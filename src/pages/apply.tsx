@@ -23,8 +23,8 @@ export const ApplyPage = () => {
                 <div className="hero-badge">
                   <span className="badge-text">SERVICE APPLICATION</span>
                 </div>
-                <h1 className="hero-headline">Transform Your Construction Business</h1>
-                <p className="hero-subheadline">
+                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>Transform Your Construction Business</h1>
+                <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
                   Join the construction companies already using AI to increase profits, reduce delays, and eliminate operational stress.
                 </p>
               </div>
@@ -38,8 +38,8 @@ export const ApplyPage = () => {
             <div className="application-container">
               
               <div className="application-intro">
-                <h2>Service Application</h2>
-                <p>Tell us about your business and challenges. Julian will personally review your application and respond within 24 hours with a customized AI implementation plan.</p>
+                <h2 style={{fontSize: 'var(--fluid-text-4xl)', marginBottom: 'var(--fluid-md)'}}>Service Application</h2>
+                <p style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)'}}>Tell us about your business and challenges. Julian will personally review your application and respond within 24 hours with a customized AI implementation plan.</p>
                 
                 <div className="application-benefits">
                   <div className="benefit-item">
