@@ -17,13 +17,21 @@ export const ApplyPage = () => {
         <section className="hero-section">
           <div className="hero-background-pattern"></div>
           <div className="hero-gradient-overlay"></div>
+          <div className="thunder-background">
+            <div className="lightning-bolt lightning-1"></div>
+            <div className="lightning-bolt lightning-2"></div>
+            <div className="lightning-bolt lightning-3"></div>
+          </div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
                 <div className="hero-badge">
                   <span className="badge-text">SERVICE APPLICATION</span>
                 </div>
-                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>Transform Your Construction Business</h1>
+                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>
+                  Transform Your Construction Business
+                  <span className="lightning-flash" style={{fontSize: 'var(--fluid-text-4xl)', marginLeft: 'var(--fluid-md)'}}>⚡</span>
+                </h1>
                 <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
                   Join the construction companies already using AI to increase profits, reduce delays, and eliminate operational stress.
                 </p>

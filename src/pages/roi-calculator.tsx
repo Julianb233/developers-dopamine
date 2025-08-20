@@ -17,6 +17,11 @@ export const ROICalculatorPage = () => {
         <section className="hero-section">
           <div className="hero-background-pattern"></div>
           <div className="hero-gradient-overlay"></div>
+          <div className="thunder-background">
+            <div className="lightning-bolt lightning-1"></div>
+            <div className="lightning-bolt lightning-2"></div>
+            <div className="lightning-bolt lightning-3"></div>
+          </div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-badge">
@@ -24,6 +29,7 @@ export const ROICalculatorPage = () => {
               </div>
               <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>
                 Calculate Your <span className="highlight-gradient">AI Savings</span>
+                <span className="lightning-flash" style={{fontSize: 'var(--fluid-text-4xl)', marginLeft: 'var(--fluid-md)'}}>⚡</span>
               </h1>
               <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '48rem'}}>
                 Get a detailed, personalized analysis of exactly how much time and money Developer Dopamine AI agents will save your construction business. Based on real data from 200+ construction companies.

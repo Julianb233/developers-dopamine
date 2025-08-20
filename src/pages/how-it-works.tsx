@@ -17,13 +17,21 @@ export const HowItWorksPage = () => {
         <section className="hero-section">
           <div className="hero-background-pattern"></div>
           <div className="hero-gradient-overlay"></div>
+          <div className="thunder-background">
+            <div className="lightning-bolt lightning-1"></div>
+            <div className="lightning-bolt lightning-2"></div>
+            <div className="lightning-bolt lightning-3"></div>
+          </div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
                 <div className="hero-badge">
                   <span className="badge-text">HOW IT WORKS</span>
                 </div>
-                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>AI That Actually Works for Construction</h1>
+                <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>
+                  AI That Actually Works for Construction
+                  <span className="lightning-flash" style={{fontSize: 'var(--fluid-text-4xl)', marginLeft: 'var(--fluid-md)'}}>⚡</span>
+                </h1>
                 <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
                   No complicated setup. No months of training. Just intelligent automation that starts saving you time and money from day one.
                 </p>

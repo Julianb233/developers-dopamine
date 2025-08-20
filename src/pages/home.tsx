@@ -25,23 +25,35 @@ export const HomePage = () => {
       <section className="hero-section">
         <div className="hero-background-pattern"></div>
         <div className="hero-gradient-overlay"></div>
+        <div className="thunder-background">
+          <div className="lightning-bolt lightning-1"></div>
+          <div className="lightning-bolt lightning-2"></div>
+          <div className="lightning-bolt lightning-3"></div>
+        </div>
         <div className="container">
           <div className="hero-content">
-            <div className="brand-logo-section">
-              <div className="brand-icon">⚡</div>
-              <div className="brand-text">
-                <div className="brand-main">DEVELOPER</div>
-                <div className="brand-accent">DOPAMINE</div>
-              </div>
+            {/* Massive Brand Name with Thunder Effects */}
+            <div className="mega-brand-section">
+              <div className="thunder-glow"></div>
+              <h1 className="mega-brand-name">
+                <span className="brand-line-1">
+                  <span className="brand-word developer">DEVELOPER</span>
+                </span>
+                <span className="brand-line-2">
+                  <span className="brand-word dopamine">DOPAMINE</span>
+                  <span className="lightning-flash">⚡</span>
+                </span>
+              </h1>
+              <div className="electric-underline"></div>
             </div>
             
-            <div className="hero-badge">
-              <span className="badge-text">AI Automation for Construction</span>
+            <div className="hero-tagline">
+              <span className="tagline-text">AI Automation for Construction Excellence</span>
             </div>
             
-            <h1 className="hero-headline" style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1'}}>
+            <h2 className="hero-headline" style={{fontSize: 'var(--fluid-text-4xl)', lineHeight: '1.2', marginTop: 'var(--fluid-xl)'}}>
               Stop Losing Money To <span className="highlight-gradient">Bad Contractors</span>
-            </h1>
+            </h2>
             
             <p className="hero-subheadline" style={{fontSize: 'var(--fluid-text-lg)', lineHeight: '1.6', maxWidth: '42rem'}}>
               Your best sub just ghosted you (again). Your budget looks like a crime scene. Your schedule is a joke.
