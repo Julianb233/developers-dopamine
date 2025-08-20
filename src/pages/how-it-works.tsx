@@ -32,6 +32,31 @@ export const HowItWorksPage = () => {
           </div>
         </section>
 
+        {/* Success Metrics Banner */}
+        <section className="success-metrics-banner" style={{background: 'var(--gradient-primary)', color: 'white', padding: 'var(--fluid-xl) 0'}}>
+          <div className="container">
+            <h2 style={{textAlign: 'center', fontSize: 'var(--fluid-text-3xl)', marginBottom: 'var(--fluid-lg)'}}>Proven Results From Real Projects</h2>
+            <div className="metrics-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--fluid-lg)', textAlign: 'center'}}>
+              <div className="metric-item">
+                <div style={{fontSize: 'var(--fluid-text-4xl)', fontWeight: 'bold'}}>$12M+</div>
+                <div style={{fontSize: 'var(--fluid-text-base)', opacity: '0.9'}}>Total Client Savings</div>
+              </div>
+              <div className="metric-item">
+                <div style={{fontSize: 'var(--fluid-text-4xl)', fontWeight: 'bold'}}>670%</div>
+                <div style={{fontSize: 'var(--fluid-text-base)', opacity: '0.9'}}>Average ROI</div>
+              </div>
+              <div className="metric-item">
+                <div style={{fontSize: 'var(--fluid-text-4xl)', fontWeight: 'bold'}}>48hrs</div>
+                <div style={{fontSize: 'var(--fluid-text-base)', opacity: '0.9'}}>Setup Time</div>
+              </div>
+              <div className="metric-item">
+                <div style={{fontSize: 'var(--fluid-text-4xl)', fontWeight: 'bold'}}>200+</div>
+                <div style={{fontSize: 'var(--fluid-text-base)', opacity: '0.9'}}>Companies Served</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Process Steps */}
         <section className="process-section">
           <div className="container">
@@ -109,6 +134,53 @@ export const HowItWorksPage = () => {
           </div>
         </section>
 
+        {/* Client Success Story */}
+        <section className="client-success-section" style={{background: 'var(--dd-light)', padding: 'var(--fluid-4xl) 0'}}>
+          <div className="container">
+            <h2 className="section-title" style={{fontSize: 'var(--fluid-text-5xl)', textAlign: 'center', marginBottom: 'var(--fluid-2xl)'}}>Real Client Success Story</h2>
+            <div className="success-story-card" style={{background: 'white', padding: 'var(--fluid-2xl)', borderRadius: 'var(--radius-xl)', maxWidth: '800px', margin: '0 auto', boxShadow: 'var(--shadow-xl)'}}>
+              <div className="client-info" style={{textAlign: 'center', marginBottom: 'var(--fluid-xl)'}}>
+                <h3 style={{fontSize: 'var(--fluid-text-2xl)', color: 'var(--dd-primary)'}}>Metropolitan Builders</h3>
+                <p style={{fontSize: 'var(--fluid-text-lg)', color: 'var(--dd-medium)'}}>Commercial Construction • $50M Annual Revenue</p>
+              </div>
+              <div className="challenge-solution" style={{display: 'grid', gap: 'var(--fluid-xl)', marginBottom: 'var(--fluid-xl)'}}>
+                <div className="challenge">
+                  <h4 style={{fontSize: 'var(--fluid-text-xl)', color: 'var(--dd-danger)', marginBottom: 'var(--fluid-md)'}}>❌ The Challenge</h4>
+                  <p>Projects consistently 20-30% over budget. Manual reporting consumed 15+ hours weekly. Subcontractor delays causing $200K+ in penalties.</p>
+                </div>
+                <div className="solution">
+                  <h4 style={{fontSize: 'var(--fluid-text-xl)', color: 'var(--dd-success)', marginBottom: 'var(--fluid-md)'}}>✅ DD Solution</h4>
+                  <p>AI agents automated budget tracking, predictive scheduling, and real-time subcontractor monitoring. Full deployment in 48 hours.</p>
+                </div>
+              </div>
+              <div className="results-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))', gap: 'var(--fluid-lg)', textAlign: 'center'}}>
+                <div className="result-item">
+                  <div style={{fontSize: 'var(--fluid-text-3xl)', fontWeight: 'bold', color: 'var(--dd-success)'}}>$2.8M</div>
+                  <div style={{fontSize: 'var(--fluid-text-sm)'}}>Annual Savings</div>
+                </div>
+                <div className="result-item">
+                  <div style={{fontSize: 'var(--fluid-text-3xl)', fontWeight: 'bold', color: 'var(--dd-success)'}}>40%</div>
+                  <div style={{fontSize: 'var(--fluid-text-sm)'}}>Faster Delivery</div>
+                </div>
+                <div className="result-item">
+                  <div style={{fontSize: 'var(--fluid-text-3xl)', fontWeight: 'bold', color: 'var(--dd-success)'}}>95%</div>
+                  <div style={{fontSize: 'var(--fluid-text-sm)'}}>On-Time Projects</div>
+                </div>
+                <div className="result-item">
+                  <div style={{fontSize: 'var(--fluid-text-3xl)', fontWeight: 'bold', color: 'var(--dd-success)'}}>15hrs</div>
+                  <div style={{fontSize: 'var(--fluid-text-sm)'}}>Weekly Time Saved</div>
+                </div>
+              </div>
+              <div className="testimonial" style={{marginTop: 'var(--fluid-xl)', padding: 'var(--fluid-lg)', borderLeft: '4px solid var(--dd-primary)', background: 'var(--dd-light)'}}>
+                <p style={{fontSize: 'var(--fluid-text-lg)', fontStyle: 'italic', marginBottom: 'var(--fluid-md)'}}>
+                  "DD transformed our entire operation. We went from constant firefighting to predictable profitability. Best business investment we've ever made."
+                </p>
+                <strong style={{color: 'var(--dd-primary)'}}>- Mike Chen, CEO, Metropolitan Builders</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ROI Timeline */}
         <section className="roi-timeline-section">
           <div className="container">
@@ -156,15 +228,21 @@ export const HowItWorksPage = () => {
         {/* CTA Section */}
         <section className="cta-section bg-primary text-white">
           <div className="container text-center">
+            <div className="urgency-alert" style={{background: 'var(--dd-warning)', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-lg)'}}>
+              <strong>⚡ LIMITED: Only 3 New Clients Accepted This Month</strong>
+            </div>
             <h2 style={{fontSize: 'var(--fluid-text-4xl)', marginBottom: 'var(--fluid-md)'}}>Ready to Transform Your Construction Business?</h2>
-            <p className="cta-subtitle" style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)'}}>
+            <p className="cta-subtitle" style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-md)'}}>
               Join 200+ construction companies already using AI to increase profits and reduce stress
             </p>
+            <div className="guarantee-badge" style={{background: 'var(--dd-success)', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-xl)', display: 'inline-block'}}>
+              <strong>🛡️ 20% Savings Guaranteed or You Don't Pay</strong>
+            </div>
             <div className="cta-buttons">
-              <a href="/apply" className="btn-accent btn-large">Get Started</a>
+              <a href="/apply" className="btn-accent btn-large" style={{marginRight: 'var(--fluid-md)'}}>Apply Now</a>
               <a href="/case-studies" className="btn-secondary-outline">See Success Stories</a>
             </div>
-            <p className="cta-note">Setup typically completed within 48-72 hours</p>
+            <p className="cta-note" style={{marginTop: 'var(--fluid-lg)'}}>Setup typically completed within 48-72 hours • Personal consultation with Julian</p>
           </div>
         </section>
 

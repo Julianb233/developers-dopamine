@@ -1,10 +1,25 @@
-import { FC } from 'hono/jsx'
 import { Navigation } from '../components/navigation'
 
-export const HomePage: FC = () => {
+export const HomePage = () => {
   return (
-    <div>
-      <Navigation />
+    <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Developer Dopamine | AI Agents That Ship Projects Faster & Cheaper</title>
+        <link href="/static/style.css" rel="stylesheet" />
+        <meta name="description" content="Stop burning cash on unreliable subcontractors. DD AI agents handle schedules, budgets, invoices, procurement & reporting while you focus on building. 3 slots per month." />
+        <meta name="keywords" content="construction AI, project management, real estate development, AI agents, budget management, scheduling software" />
+        
+        {/* Open Graph Tags */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://developerdopamine.pages.dev/" />
+        <meta property="og:title" content="Developer Dopamine | AI Agents That Ship Projects Faster & Cheaper" />
+        <meta property="og:description" content="Stop burning cash on unreliable subcontractors. DD AI agents handle schedules, budgets, invoices, procurement & reporting while you focus on building." />
+        <meta property="og:image" content="https://developerdopamine.pages.dev/static/og-image.png" />
+      </head>
+      <body>
+        <Navigation />
       
       {/* Hero Section */}
       <section className="hero-section">
@@ -373,6 +388,9 @@ export const HomePage: FC = () => {
           };
         `
       }}></script>
-    </div>
+      
+        <script src="/static/main.js"></script>
+      </body>
+    </html>
   )
 }

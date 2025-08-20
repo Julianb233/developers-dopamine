@@ -17,20 +17,36 @@ export const PortalPage = () => {
         <section className="portal-header bg-primary text-white">
           <div className="container">
             <div className="portal-hero">
-              <h1 style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1', marginBottom: 'var(--fluid-md)'}}>Developer Portal</h1>
-              <p style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)'}}>Connect to your AI agents and backend automation systems</p>
-              <div className="portal-status">
-                <div className="status-item">
-                  <span className="status-label">Backend Status:</span>
-                  <span className="status-value online">Connected</span>
+              <div className="hero-badge" style={{textAlign: 'center', marginBottom: 'var(--fluid-md)'}}>
+                <span className="badge-text">CLIENT DASHBOARD PREVIEW</span>
+              </div>
+              <h1 style={{fontSize: 'var(--fluid-text-6xl)', lineHeight: '1.1', marginBottom: 'var(--fluid-md)', textAlign: 'center'}}>Your AI Command Center</h1>
+              <p style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-xl)', textAlign: 'center', maxWidth: '600px', margin: '0 auto var(--fluid-xl)'}}>See how your personalized dashboard will look when you become a DD client. Real-time project intelligence at your fingertips.</p>
+              
+              <div className="demo-alert" style={{background: 'var(--dd-warning)', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-lg)', textAlign: 'center', marginBottom: 'var(--fluid-xl)'}}>
+                <strong>🚀 LIVE DEMO - This is what you'll get as a DD client</strong>
+              </div>
+              
+              <div className="portal-status-grid" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--fluid-lg)', textAlign: 'center'}}>
+                <div className="status-card" style={{background: 'rgba(255,255,255,0.1)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)'}}>
+                  <div style={{fontSize: 'var(--fluid-text-2xl)', marginBottom: 'var(--fluid-sm)'}}>⚡</div>
+                  <div className="status-label">AI Agents:</div>
+                  <div className="status-value" style={{color: 'var(--dd-success)', fontWeight: 'bold'}}>6 Active</div>
                 </div>
-                <div className="status-item">
-                  <span className="status-label">Automation Workflows:</span>
-                  <span className="status-value ready">Ready</span>
+                <div className="status-card" style={{background: 'rgba(255,255,255,0.1)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)'}}>
+                  <div style={{fontSize: 'var(--fluid-text-2xl)', marginBottom: 'var(--fluid-sm)'}}>📊</div>
+                  <div className="status-label">Projects Tracked:</div>
+                  <div className="status-value" style={{color: 'var(--dd-success)', fontWeight: 'bold'}}>12 Active</div>
                 </div>
-                <div className="status-item">
-                  <span className="status-label">User Login:</span>
-                  <span className="status-value pending">Coming Soon</span>
+                <div className="status-card" style={{background: 'rgba(255,255,255,0.1)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)'}}>
+                  <div style={{fontSize: 'var(--fluid-text-2xl)', marginBottom: 'var(--fluid-sm)'}}>💰</div>
+                  <div className="status-label">Monthly Savings:</div>
+                  <div className="status-value" style={{color: 'var(--dd-success)', fontWeight: 'bold'}}>$847K</div>
+                </div>
+                <div className="status-card" style={{background: 'rgba(255,255,255,0.1)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)'}}>
+                  <div style={{fontSize: 'var(--fluid-text-2xl)', marginBottom: 'var(--fluid-sm)'}}>📈</div>
+                  <div className="status-label">ROI This Year:</div>
+                  <div className="status-value" style={{color: 'var(--dd-success)', fontWeight: 'bold'}}>670%</div>
                 </div>
               </div>
             </div>
@@ -189,32 +205,53 @@ export const PortalPage = () => {
           </div>
         </section>
 
-        {/* Coming Soon Features */}
-        <section className="coming-soon bg-dark text-white">
-          <div className="container">
-            <h2>Coming Soon (After Supabase Setup)</h2>
-            <div className="features-preview">
-              <div className="preview-item">
-                <div className="preview-icon">🔐</div>
-                <h3>Secure User Login</h3>
-                <p>Supabase-powered authentication with role-based access control</p>
+        {/* Get Your Own Dashboard CTA */}
+        <section className="dashboard-cta-section" style={{background: 'var(--gradient-primary)', color: 'white', padding: 'var(--fluid-4xl) 0'}}>
+          <div className="container" style={{textAlign: 'center'}}>
+            <h2 style={{fontSize: 'var(--fluid-text-5xl)', marginBottom: 'var(--fluid-lg)'}}>Want Your Own AI Dashboard?</h2>
+            <p style={{fontSize: 'var(--fluid-text-xl)', marginBottom: 'var(--fluid-lg)', maxWidth: '600px', margin: '0 auto var(--fluid-lg)'}}>
+              This is just a preview. DD clients get a fully personalized dashboard with real-time data from their projects.
+            </p>
+            
+            <div className="dashboard-benefits" style={{display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: 'var(--fluid-lg)', marginBottom: 'var(--fluid-2xl)', background: 'rgba(255,255,255,0.1)', padding: 'var(--fluid-xl)', borderRadius: 'var(--radius-lg)'}}>
+              <div className="benefit-item">
+                <div style={{fontSize: 'var(--fluid-text-3xl)', marginBottom: 'var(--fluid-sm)'}}>🎯</div>
+                <h4>Real Project Data</h4>
+                <p>Live metrics from your actual construction projects</p>
               </div>
-              <div className="preview-item">
-                <div className="preview-icon">📋</div>
-                <h3>Personal Dashboard</h3>
-                <p>Track your AI agent performance, ROI metrics, and project status</p>
+              <div className="benefit-item">
+                <div style={{fontSize: 'var(--fluid-text-3xl)', marginBottom: 'var(--fluid-sm)'}}>⚡</div>
+                <h4>6 AI Agents Working</h4>
+                <p>Schedule, budget, document, workforce, communication & supply chain automation</p>
               </div>
-              <div className="preview-item">
-                <div className="preview-icon">⚙️</div>
-                <h3>Agent Configuration</h3>
-                <p>Customize your AI agents for specific project types and workflows</p>
+              <div className="benefit-item">
+                <div style={{fontSize: 'var(--fluid-text-3xl)', marginBottom: 'var(--fluid-sm)'}}>📊</div>
+                <h4>Custom Analytics</h4>
+                <p>ROI tracking, cost analysis, and performance optimization insights</p>
               </div>
-              <div className="preview-item">
-                <div className="preview-icon">📈</div>
-                <h3>Advanced Analytics</h3>
-                <p>Detailed reporting on cost savings, time efficiency, and project outcomes</p>
+              <div className="benefit-item">
+                <div style={{fontSize: 'var(--fluid-text-3xl)', marginBottom: 'var(--fluid-sm)'}}>🛡️</div>
+                <h4>Enterprise Security</h4>
+                <p>Bank-level encryption and complete data privacy protection</p>
               </div>
             </div>
+            
+            <div className="urgency-alert" style={{background: 'var(--dd-warning)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-xl)', display: 'inline-block'}}>
+              <strong>⚡ LIMITED: Only 3 New Clients This Month</strong>
+            </div>
+            
+            <div className="cta-buttons">
+              <a href="/apply" className="btn-accent btn-large" style={{marginRight: 'var(--fluid-md)', padding: 'var(--fluid-lg) var(--fluid-2xl)', fontSize: 'var(--fluid-text-lg)', background: 'var(--dd-accent)', color: 'white', textDecoration: 'none', borderRadius: 'var(--radius-lg)', fontWeight: 'bold'}}>
+                Get Your Dashboard - Apply Now
+              </a>
+              <a href="/case-studies" className="btn-secondary" style={{padding: 'var(--fluid-lg) var(--fluid-xl)', fontSize: 'var(--fluid-text-base)', border: '2px solid white', color: 'white', textDecoration: 'none', borderRadius: 'var(--radius-lg)'}}>
+                See Client Results
+              </a>
+            </div>
+            
+            <p style={{marginTop: 'var(--fluid-lg)', fontSize: 'var(--fluid-text-base)', opacity: '0.9'}}>
+              🛡️ 20% Savings Guaranteed • 48-Hour Setup • Personal Consultation with Julian
+            </p>
           </div>
         </section>
 
