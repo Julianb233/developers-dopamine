@@ -13,10 +13,10 @@ export const HomePage = () => {
         
         {/* Open Graph Tags */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://developerdopamine.pages.dev/" />
+        <meta property="og:url" content="https://developers-dopamine.pages.dev/" />
         <meta property="og:title" content="Developer Dopamine | AI Agents That Ship Projects Faster & Cheaper" />
         <meta property="og:description" content="Stop burning cash on unreliable subcontractors. DD AI agents handle schedules, budgets, invoices, procurement & reporting while you focus on building." />
-        <meta property="og:image" content="https://developerdopamine.pages.dev/static/og-image.png" />
+        <meta property="og:image" content="https://developers-dopamine.pages.dev/static/og-image.png" />
       </head>
       <body>
         <Navigation />

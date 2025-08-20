@@ -47,7 +47,7 @@ export const ApplyPage = () => {
               
               <div className="application-intro">
                 <div className="scarcity-alert" style={{background: 'var(--dd-warning)', color: 'white', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-lg)', textAlign: 'center'}}>
-                  <strong>⚡ LIMITED: Only 3 New Clients Accepted Per Month</strong>
+                  <strong>LIMITED: Only 3 New Clients Accepted Per Month</strong>
                 </div>
                 
                 <h2 style={{fontSize: 'var(--fluid-text-4xl)', marginBottom: 'var(--fluid-md)'}}>Service Application</h2>
@@ -55,7 +55,7 @@ export const ApplyPage = () => {
                 
                 {/* Social Proof Section */}
                 <div className="social-proof-section" style={{background: 'var(--dd-light)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-xl)'}}>
-                  <h4 style={{textAlign: 'center', marginBottom: 'var(--fluid-md)', fontSize: 'var(--fluid-text-lg)'}}>✨ What Recent Clients Say:</h4>
+                  <h4 style={{textAlign: 'center', marginBottom: 'var(--fluid-md)', fontSize: 'var(--fluid-text-lg)'}}>What Recent Clients Say:</h4>
                   <div className="testimonial-grid" style={{display: 'grid', gap: 'var(--fluid-md)', marginBottom: 'var(--fluid-lg)'}}>
                     <div className="testimonial-card" style={{background: 'white', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-md)', fontSize: 'var(--fluid-text-sm)'}}>
                       <p><em>"DD saved us $2.8M in our first year. Julian's implementation was flawless."</em></p>
@@ -70,7 +70,7 @@ export const ApplyPage = () => {
                 
                 {/* Guarantee Section */}
                 <div className="guarantee-section" style={{background: 'var(--dd-success)', color: 'white', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-xl)', textAlign: 'center'}}>
-                  <h4 style={{fontSize: 'var(--fluid-text-xl)', marginBottom: 'var(--fluid-sm)'}}>🛡️ 100% RISK-FREE GUARANTEE</h4>
+                  <h4 style={{fontSize: 'var(--fluid-text-xl)', marginBottom: 'var(--fluid-sm)'}}>100% RISK-FREE GUARANTEE</h4>
                   <p style={{fontSize: 'var(--fluid-text-base)'}}>If DD doesn't save you at least 20% in time and cost on your next project, you don't pay. Period.</p>
                 </div>
                 

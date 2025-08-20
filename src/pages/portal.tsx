@@ -237,7 +237,7 @@ export const PortalPage = () => {
             </div>
             
             <div className="urgency-alert" style={{background: 'var(--dd-warning)', padding: 'var(--fluid-lg)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-xl)', display: 'inline-block'}}>
-              <strong>⚡ LIMITED: Only 3 New Clients This Month</strong>
+              <strong>LIMITED: Only 3 New Clients This Month</strong>
             </div>
             
             <div className="cta-buttons">
@@ -250,7 +250,7 @@ export const PortalPage = () => {
             </div>
             
             <p style={{marginTop: 'var(--fluid-lg)', fontSize: 'var(--fluid-text-base)', opacity: '0.9'}}>
-              🛡️ 20% Savings Guaranteed • 48-Hour Setup • Personal Consultation with Julian
+              20% Savings Guaranteed • 48-Hour Setup • Personal Consultation with Julian
             </p>
           </div>
         </section>

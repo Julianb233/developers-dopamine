@@ -237,14 +237,14 @@ export const HowItWorksPage = () => {
         <section className="cta-section bg-primary text-white">
           <div className="container text-center">
             <div className="urgency-alert" style={{background: 'var(--dd-warning)', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-lg)'}}>
-              <strong>⚡ LIMITED: Only 3 New Clients Accepted This Month</strong>
+              <strong>LIMITED: Only 3 New Clients Accepted This Month</strong>
             </div>
             <h2 style={{fontSize: 'var(--fluid-text-4xl)', marginBottom: 'var(--fluid-md)'}}>Ready to Transform Your Construction Business?</h2>
             <p className="cta-subtitle" style={{fontSize: 'var(--fluid-text-lg)', marginBottom: 'var(--fluid-md)'}}>
               Join 200+ construction companies already using AI to increase profits and reduce stress
             </p>
             <div className="guarantee-badge" style={{background: 'var(--dd-success)', padding: 'var(--fluid-md)', borderRadius: 'var(--radius-lg)', marginBottom: 'var(--fluid-xl)', display: 'inline-block'}}>
-              <strong>🛡️ 20% Savings Guaranteed or You Don't Pay</strong>
+              <strong>20% Savings Guaranteed or You Don't Pay</strong>
             </div>
             <div className="cta-buttons">
               <a href="/apply" className="btn-accent btn-large" style={{marginRight: 'var(--fluid-md)'}}>Apply Now</a>
