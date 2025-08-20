@@ -82,10 +82,10 @@
   - 📦 **Procurement Agent**: Supply chain optimization
 
 ### 🏆 **ELITE PARTNERSHIP POSITIONING**
-- ✅ **Exclusive Program Branding**: "Limited to 10 Construction Leaders"
+- ✅ **Exclusive Program Branding**: "Limited to 3 New Clients Per Month"
 - ✅ **Professional Urgency Dashboard**: Progress bars and real-time counters
 - ✅ **Explanation Cards**: Why limitation exists, what clients get
-- ✅ **Enhanced Scarcity Mechanics**: Q4 2024 enrollment tracking
+- ✅ **Enhanced Scarcity Mechanics**: August 2024 monthly enrollment tracking
 
 ### 📱 **TECHNICAL EXCELLENCE**
 - ✅ **Mobile-First Responsive**: Perfect across all device sizes
@@ -110,8 +110,8 @@
 
 ## ⏰ Interactive Features
 - **Countdown Timer**: Auto-calculates to quarter end, updates every second
-- **Slots Remaining**: Dynamic scarcity display (7/10 remaining)
-- **URL Override**: `?slots=5` to manually set available slots
+- **Slots Remaining**: Dynamic scarcity display (2/3 remaining this month)
+- **URL Override**: `?slots=2` to manually set available slots (max 3 per month)
 - **Form Validation**: Client-side validation with success/error messaging
 - **Animations**: Fade-in effects, pulse buttons, hover interactions
 
@@ -126,7 +126,7 @@
 1. **Landing Experience**: Users see bold value proposition and pain points
 2. **Agent Discovery**: Browse 6 AI agent capabilities with detailed descriptions
 3. **Value Recognition**: See $350K+ savings breakdown with guarantee
-4. **Urgency Creation**: Countdown timer + limited slots (10/quarter) drives action
+4. **Urgency Creation**: Countdown timer + limited slots (3/month) drives action
 5. **Application**: Simple form captures company details and pain points
 6. **Confirmation**: Success message with 24-hour response promise
 
@@ -142,8 +142,8 @@
 ```javascript
 // Auto-injected in page head
 window.DD_CONFIG = {
-  countdownToISO: "", // Auto-calculates quarter end
-  maxSlotsPerQuarter: 10
+  countdownToISO: "", // Auto-calculates month end
+  maxSlotsPerMonth: 3
 };
 ```
 
@@ -184,7 +184,7 @@ window.DD_CONFIG = {
 8. **Lead Magnets**: Free resources to capture emails before application
 
 ## 🔥 Conversion Optimization Features
-- **Scarcity**: Limited quarterly slots create urgency
+- **Scarcity**: Limited monthly slots (3 per month) create urgency
 - **Social Proof**: Value numbers and guarantee build trust
 - **Clear CTA**: Multiple "Apply Now" buttons throughout page
 - **Risk Reversal**: 20% savings guarantee removes purchase anxiety
