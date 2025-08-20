@@ -14,13 +14,17 @@ export const DocumentProcessorPage = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="hero-section bg-primary text-white">
+        <section className="hero-section">
+          <div className="hero-background-pattern"></div>
+          <div className="hero-gradient-overlay"></div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
-                <div className="badge text-accent">DOC</div>
-                <h1 className="hero-title">Document Processor</h1>
-                <p className="hero-subtitle">
+                <div className="hero-badge">
+                  <span className="badge-text">DOCUMENT PROCESSOR</span>
+                </div>
+                <h1 className="hero-headline">Document Processor</h1>
+                <p className="hero-subheadline">
                   AI that reads every blueprint, contract, and change order faster than your coffee gets cold—and actually remembers what it read.
                 </p>
                 <div className="impact-stats">

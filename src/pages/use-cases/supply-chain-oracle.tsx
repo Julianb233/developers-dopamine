@@ -14,13 +14,17 @@ export const SupplyChainOraclePage = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="hero-section bg-primary text-white">
+        <section className="hero-section">
+          <div className="hero-background-pattern"></div>
+          <div className="hero-gradient-overlay"></div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
-                <div className="badge text-accent">SUPPLIER ORACLE</div>
-                <h1 className="hero-title">Supply Chain Oracle</h1>
-                <p className="hero-subtitle">
+                <div className="hero-badge">
+                  <span className="badge-text">SUPPLY CHAIN ORACLE</span>
+                </div>
+                <h1 className="hero-headline">Supply Chain Oracle</h1>
+                <p className="hero-subheadline">
                   The AI that knows your lumber supplier's ex-wife is filing for divorce <strong>before it affects your delivery schedule.</strong>
                 </p>
                 <div className="skeptic-proof">

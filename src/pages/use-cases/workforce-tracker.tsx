@@ -14,13 +14,17 @@ export const WorkforceTrackerPage = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="hero-section bg-primary text-white">
+        <section className="hero-section">
+          <div className="hero-background-pattern"></div>
+          <div className="hero-gradient-overlay"></div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
-                <div className="badge text-accent">CREW</div>
-                <h1 className="hero-title">Workforce Tracker</h1>
-                <p className="hero-subtitle">
+                <div className="hero-badge">
+                  <span className="badge-text">WORKFORCE TRACKER</span>
+                </div>
+                <h1 className="hero-headline">Workforce Tracker</h1>
+                <p className="hero-subheadline">
                   AI that knows exactly which crew goes where, when they'll finish, and who needs backup—before your foreman even thinks to ask.
                 </p>
                 <div className="impact-stats">

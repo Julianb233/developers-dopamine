@@ -14,13 +14,17 @@ export const CommunicationHubPage = () => {
         <Navigation />
 
         {/* Hero Section */}
-        <section className="hero-section bg-primary text-white">
+        <section className="hero-section">
+          <div className="hero-background-pattern"></div>
+          <div className="hero-gradient-overlay"></div>
           <div className="container">
             <div className="hero-content">
               <div className="hero-text">
-                <div className="badge text-accent">COMM</div>
-                <h1 className="hero-title">Communication Hub</h1>
-                <p className="hero-subtitle">
+                <div className="hero-badge">
+                  <span className="badge-text">COMMUNICATION HUB</span>
+                </div>
+                <h1 className="hero-headline">Communication Hub</h1>
+                <p className="hero-subheadline">
                   AI that makes sure the right people get the right information at exactly the right time—automatically, every time.
                 </p>
                 <div className="impact-stats">

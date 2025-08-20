@@ -7,24 +7,26 @@ export const ScheduleIntelligencePage: FC = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="use-case-hero">
+      <section className="hero-section">
+        <div className="hero-background-pattern"></div>
+        <div className="hero-gradient-overlay"></div>
         <div className="container">
           <div className="hero-content">
-            <div className="use-case-badge">
-              <span className="badge-icon">SCHED</span>
-              <span className="badge-text">Schedule Intelligence</span>
-            </div>
-            
-            <h1 className="use-case-headline">
+            <div className="hero-text">
+              <div className="hero-badge">
+                <span className="badge-text">SCHEDULE INTELLIGENCE</span>
+              </div>
+              <h1 className="hero-headline">
               Never Miss Another Deadline<br/>
               <span className="highlight-gradient">Because You Saw It Coming</span>
             </h1>
             
-            <p className="use-case-subheadline">
+              <p className="hero-subheadline">
               Watch a day in the life of a project manager who stopped juggling chaos 
               and started predicting the future. Every delay caught, every bottleneck avoided, 
               every deadline met.
-            </p>
+              </p>
+            </div>
           </div>
         </div>
       </section>
