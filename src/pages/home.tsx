@@ -248,7 +248,7 @@ export const HomePage: FC = () => {
               </div>
               
               <h2>AI Service Subscription</h2>
-              <h3>Limited to 10 Construction Leaders Per Quarter</h3>
+              <h3>Limited to 3 New Clients Per Month</h3>
             </div>
             
             <div className="scarcity-explanation">
@@ -279,13 +279,13 @@ export const HomePage: FC = () => {
             
             <div className="urgency-dashboard">
               <div className="dashboard-header">
-                <h4>Q4 2024 Enrollment Status</h4>
+                <h4>August 2024 Enrollment Status</h4>
               </div>
               
               <div className="urgency-grid">
                 <div className="countdown-card">
                   <div className="card-header">
-                    <span className="card-title">Enrollment Closes</span>
+                    <span className="card-title">Month Closes</span>
                   </div>
                   <div className="card-content">
                     <div id="countdown-display">Loading...</div>
@@ -310,7 +310,7 @@ export const HomePage: FC = () => {
               <div className="urgency-notice">
                 <div className="notice-text">
                   <strong>Applications are being processed in real-time.</strong> 
-                  Once we reach 10 active service subscriptions, new enrollment automatically closes until Q1 2025.
+                  We only accept 3 new clients per month to ensure dedicated support and personalized implementation.
                 </div>
               </div>
             </div>
@@ -368,8 +368,8 @@ export const HomePage: FC = () => {
       <script dangerouslySetInnerHTML={{
         __html: `
           window.DD_CONFIG = {
-            countdownToISO: "", // auto-set to quarter end, override if needed
-            maxSlotsPerQuarter: 10
+            countdownToISO: "", // auto-set to month end, override if needed
+            maxSlotsPerMonth: 3
           };
         `
       }}></script>

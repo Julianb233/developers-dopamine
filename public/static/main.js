@@ -5,7 +5,7 @@ class DDLandingPage {
   constructor() {
     this.config = window.DD_CONFIG || {
       countdownToISO: '',
-      maxSlotsPerQuarter: 10
+      maxSlotsPerMonth: 3
     };
     
     this.init();
@@ -23,12 +23,12 @@ class DDLandingPage {
     const countdownDisplay = document.getElementById('countdown-display');
     if (!countdownDisplay) return;
     
-    // Auto-calculate quarter end if not specified
+    // Auto-calculate month end if not specified
     let targetDate;
     if (this.config.countdownToISO) {
       targetDate = new Date(this.config.countdownToISO);
     } else {
-      targetDate = this.getQuarterEnd();
+      targetDate = this.getMonthEnd();
     }
     
     this.updateCountdown(targetDate);
@@ -39,27 +39,21 @@ class DDLandingPage {
     }, 1000);
   }
   
-  getQuarterEnd() {
+  getMonthEnd() {
     const now = new Date();
-    const year = now.getFullYear();
-    const month = now.getMonth();
+    let year = now.getFullYear();
+    let month = now.getMonth();
     
-    // Determine current quarter and next quarter end
-    let quarterEndMonth;
-    if (month < 3) quarterEndMonth = 2; // March (Q1)
-    else if (month < 6) quarterEndMonth = 5; // June (Q2)
-    else if (month < 9) quarterEndMonth = 8; // September (Q3)
-    else quarterEndMonth = 11; // December (Q4)
-    
-    // If we're in the last month of quarter, move to next quarter
-    if (month === quarterEndMonth) {
-      quarterEndMonth = (quarterEndMonth + 3) % 12;
-      if (quarterEndMonth < month) year++;
+    // Move to next month
+    month++;
+    if (month > 11) {
+      month = 0;
+      year++;
     }
     
-    // Last day of quarter at 23:59:59 EST
-    const quarterEnd = new Date(year, quarterEndMonth + 1, 0, 23, 59, 59);
-    return quarterEnd;
+    // Last day of current month at 23:59:59 EST
+    const monthEnd = new Date(year, month, 0, 23, 59, 59);
+    return monthEnd;
   }
   
   updateCountdown(targetDate) {
@@ -112,10 +106,10 @@ class DDLandingPage {
     const urlSlots = parseInt(urlParams.get('slots'));
     
     let slotsRemaining;
-    if (urlSlots && urlSlots >= 0 && urlSlots <= this.config.maxSlotsPerQuarter) {
+    if (urlSlots && urlSlots >= 0 && urlSlots <= this.config.maxSlotsPerMonth) {
       slotsRemaining = urlSlots;
     } else {
-      // Default dynamic calculation (simulate based on time in quarter)
+      // Default dynamic calculation (simulate based on time in month)
       slotsRemaining = this.calculateSlotsRemaining();
     }
     
@@ -125,31 +119,25 @@ class DDLandingPage {
   calculateSlotsRemaining() {
     // Simulate slots filling up over time
     const now = new Date();
-    const quarterStart = this.getQuarterStart();
-    const quarterEnd = this.getQuarterEnd();
+    const monthStart = this.getMonthStart();
+    const monthEnd = this.getMonthEnd();
     
-    const quarterProgress = (now - quarterStart) / (quarterEnd - quarterStart);
-    const baseSlots = Math.max(1, this.config.maxSlotsPerQuarter - Math.floor(quarterProgress * (this.config.maxSlotsPerQuarter - 2)));
+    const monthProgress = (now - monthStart) / (monthEnd - monthStart);
+    const baseSlots = Math.max(1, this.config.maxSlotsPerMonth - Math.floor(monthProgress * (this.config.maxSlotsPerMonth - 1)));
     
     // Add some randomization but keep it consistent for session
     const sessionSeed = this.getSessionSeed();
-    const variation = Math.floor(sessionSeed * 3) - 1; // -1, 0, or 1
+    const variation = Math.floor(sessionSeed * 2) - 1; // -1 or 0 (for max 3 slots)
     
-    return Math.max(1, Math.min(this.config.maxSlotsPerQuarter, baseSlots + variation));
+    return Math.max(1, Math.min(this.config.maxSlotsPerMonth, baseSlots + variation));
   }
   
-  getQuarterStart() {
+  getMonthStart() {
     const now = new Date();
     const year = now.getFullYear();
     const month = now.getMonth();
     
-    let quarterStartMonth;
-    if (month < 3) quarterStartMonth = 0; // January
-    else if (month < 6) quarterStartMonth = 3; // April
-    else if (month < 9) quarterStartMonth = 6; // July
-    else quarterStartMonth = 9; // October
-    
-    return new Date(year, quarterStartMonth, 1);
+    return new Date(year, month, 1);
   }
   
   getSessionSeed() {
@@ -168,19 +156,27 @@ class DDLandingPage {
     const slotsDisplay = document.getElementById('slots-display');
     if (!slotsDisplay) return;
     
-    const urgencyColor = slots <= 3 ? 'var(--dopamine-primary)' : 
-                        slots <= 5 ? 'var(--dopamine-warning)' : 
+    const urgencyColor = slots <= 1 ? 'var(--dopamine-primary)' : 
+                        slots <= 2 ? 'var(--dopamine-warning)' : 
                         'var(--dopamine-success)';
     
-    const urgencyIcon = slots <= 3 ? '🔥' : slots <= 5 ? '⚠️' : '✅';
+    const urgencyIcon = slots <= 1 ? '🔥' : slots <= 2 ? '⚠️' : '✅';
     
     slotsDisplay.innerHTML = `
       <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; color: ${urgencyColor};">
         <span style="font-size: 1.5rem;">${urgencyIcon}</span>
         <span style="font-size: 3rem; font-weight: 700;">${slots}</span>
-        <span style="font-size: 1rem; opacity: 0.8;">/ ${this.config.maxSlotsPerQuarter}</span>
+        <span style="font-size: 1rem; opacity: 0.8;">/ ${this.config.maxSlotsPerMonth}</span>
       </div>
     `;
+    
+    // Update progress bar if it exists
+    const progressFill = document.getElementById('progress-fill');
+    if (progressFill) {
+      const filledSlots = this.config.maxSlotsPerMonth - slots;
+      const percentage = (filledSlots / this.config.maxSlotsPerMonth) * 100;
+      progressFill.style.width = `${percentage}%`;
+    }
   }
   
   // Form Handling
